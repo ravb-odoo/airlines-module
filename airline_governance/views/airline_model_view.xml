@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record id="airline_model_action" model="ir.actions.act_window">
+            <field name="name">Airlines</field>
+            <field name="res_model">airline.model</field>
+            <field name="view_mode">list,form</field>
+        </record>
+        <record id="airline_passenger_model_action" model="ir.actions.act_window">
+            <field name="name">Passengers</field>
+            <field name="res_model">airline.model</field>
+            <field name="view_mode">list,form</field>
+        </record>
+        <record id="airline_airport_model_action" model="ir.actions.act_window">
+            <field name="name">Airports</field>
+            <field name="res_model">airline.model</field>
+            <field name="view_mode">list,form</field>
+        </record>
+        <record id="airline_model_action_help" model="ir.actions.act_window">
+            <field name="name">Help</field>
+            <field name="res_model">airline.model</field>
+            <field name="view_mode">list,form</field>
+        </record>
+
+
+        <record id="airline_view_tree" model="ir.ui.view">
+            <field name="name">Airlines</field>
+            <field name="model">airline.model</field>
+            <field name="arch" type="xml">
+                <tree expand="1" string="Airline">
+                    <field name="name"></field>
+                    <field name="depart_airport" />
+                    <field name="arrival_airport" />
+                    <field name="depart_date_time"></field>
+                    <field name="arrival_date_time"></field>
+                    <field name="type"></field>
+                    <field name="total_distance"></field>
+                    <field name="price"></field>
+                    <field name="gate_no" optional='hide'></field>
+                </tree>
+            </field>
+        </record>
+
+        <record id="airline_view_form" model="ir.ui.view">
+            <field name="name">Airlines</field>
+            <field name="model">airline.model</field>
+            <field name="arch" type="xml">
+                <form string="Airline">
+                    <!-- <header>
+                        <field name="state" widget="statusbar"
+                    options = "{'clickable': '1'}"></field>
+                    </header> -->
+                    <sheet>
+                        <label for="name" string="Name" />
+                        <h1>
+                            <field name="name" placeholder="Name"></field>
+                        </h1>
+
+                        <group>
+                            <group>
+                                <field name="type"></field>
+                            </group>
+                            <group>
+                                <field name="total_distance"></field>
+                            </group>
+                        </group>
+
+                        <group>
+                            <group>
+                                <field name="gate_no"></field>
+                            </group>
+                            <group>
+                                <field name="price"></field>
+                            </group>
+                        </group>
+
+                        <notebook>
+                            <page name="Details">
+                                <group>
+                                    <group>
+                                        <field name="depart_date_time"></field>
+                                    </group>
+                                    <group>
+                                        <field name="arrival_date_time"></field>
+                                    </group>
+                                </group>
+                                <group>
+                                    <group>
+                                        <field name="depart_airport"></field>
+                                    </group>
+                                    <group>
+                                        <field name="arrival_airport"></field>
+                                    </group>
+                                </group>
+                            </page>
+                            <page name="About">
+                                <group>
+                                    <field name="description"></field>
+                                </group>
+                            </page>
+                            <page name="Other">
+                                <group>
+                                    <group>
+                                        <field name="active"></field>
+                                    </group>
+                                </group>
+                            </page>
+                        </notebook>
+
+
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+
+        <record id="airline_view_search" model="ir.ui.view">
+            <field name="name">Airlines</field>
+            <field name="model">airline.model</field>
+            <field name="arch" type="xml">
+                <search string="Airline_Model">
+                    <field name="name"></field>
+                    <field name="depart_date_time"></field>
+                    <field name="arrival_airport"></field>
+                    <field name="depart_airport"></field>
+                    <field name="arrival_date_time"></field>
+                    <field name="type"></field>
+                </search>
+            </field>
+        </record>
+    </data>
+</odoo>
