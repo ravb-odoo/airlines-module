@@ -5,7 +5,7 @@ class airlineModel(models.Model):
     _name = "airline.model"
     _description = "Airline Model"
 
-    name = fields.Char('name', required = True)
+    name = fields.Char('Name', required = True)
     description = fields.Text('Description')
     type = fields.Selection(string="Type", selection = [('domestic','Domestic'), ('international','International')])
     arrival_date_time = fields.Datetime('Arrival', required = True)

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record id="airport_view_tree" model="ir.ui.view">
+            <field name="name">Airports</field>
+            <field name="model">airport.model</field>
+            <field name="arch" type="xml">
+                <tree expand="1" string="airport">
+                    <field name="name"></field>
+                    <field name="terminal" />
+                    <field name="country" />
+                </tree>
+            </field>
+        </record>
+
+        <record id="airport_view_form" model="ir.ui.view">
+            <field name="name">Airport</field>
+            <field name="model">airport.model</field>
+            <field name="arch" type="xml">
+                <form string="airports">
+                    <sheet>
+                        <label for="name" string="Name" />
+                        <h1>
+                            <field name="name" placeholder="Name"></field>
+                        </h1>
+
+                        <group>
+                            <group>
+                                <field name="terminal"></field>
+                            </group>
+                            <group>
+                                <field name="country"></field>
+                            </group>
+                        </group>
+
+                        <notebook>
+                            <page name="Description">
+                                <field name="description"></field>
+                            </page>
+                        </notebook>
+
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <!-- <record id="airport_view_search" model="ir.ui.view">
+            <field name="name">airports</field>
+            <field name="model">Airport.model</field>
+            <field name="arch" type="xml">
+                <search string="airport_Model">
+                    <field name="name"></field>
+                    <field name="airline_class"></field>
+                    <field name="froms"></field>
+                    <field name="to"></field>
+                    <field name="nationality"></field>
+                    <field name="flight_id"></field>
+
+                    <group string="Group By">                       
+                        <filter string="Name" name="name" context="{'group_by':'name'}" />
+                        <filter string="Class" name="airline_class" context="{'group_by':'airline_class'}" />
+                        <separator/>
+                        <filter string="Departure" name="froms" context="{'group_by':'froms'}" />
+                        <filter name="to" string="Arrival" context="{'group_by':'to'}" />
+                        <filter string="Nationality" name="nationality" context="{'group_by':'nationality'}" />
+                        <filter string="Flights" name="flight_id" context="{'group_by':'flight_id'}" />
+                    </group>
+
+
+                </search>
+            </field>
+        </record> -->
+    </data>
+</odoo>

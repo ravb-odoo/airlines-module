@@ -13,7 +13,7 @@
         </record>
         <record id="airline_airport_model_action" model="ir.actions.act_window">
             <field name="name">Airports</field>
-            <field name="res_model">airline.model</field>
+            <field name="res_model">airport.model</field>
             <field name="view_mode">list,form</field>
         </record>
         <record id="airline_model_action_help" model="ir.actions.act_window">

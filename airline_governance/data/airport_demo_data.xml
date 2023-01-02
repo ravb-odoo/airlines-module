@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<odoo>
+    <data>
+        <record model="airport.model" id="airport_demo_data1">
+            <field name="name"> Indira Gandhi International Airport</field>
+            <field name="description">abc</field>
+            <field name="terminal">1</field>
+            <field name="country">6</field>
+            
+        </record>
+    </data>
+</odoo>
