@@ -8,5 +8,7 @@ class airportModel(models.Model):
     name = fields.Char('Name', required = True)
     description = fields.Text('Description')
     terminal = fields.Integer('Terminal', required = True)
+    city = fields.Many2one("res.country.state", string='City', required = True)
     country = fields.Many2one("res.country", string='Country', required = True)
+    iata_code = fields.Char('IATA Code', required=True)
     

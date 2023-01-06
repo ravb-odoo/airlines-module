@@ -8,6 +8,7 @@
                 <tree expand="1" string="airport">
                     <field name="name"></field>
                     <field name="terminal" />
+                    <field name="city"></field>
                     <field name="country" />
                 </tree>
             </field>
@@ -26,8 +27,13 @@
 
                         <group>
                             <group>
+                                <field name="city"></field>
+                            </group>
+                            <group>
                                 <field name="terminal"></field>
                             </group>
+                        </group>
+                        <group>
                             <group>
                                 <field name="country"></field>
                             </group>
