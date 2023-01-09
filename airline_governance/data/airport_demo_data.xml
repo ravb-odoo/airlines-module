@@ -6,48 +6,48 @@
             <field name="name"> Indira Gandhi International Airport</field>
             <field name="description">abc</field>
             <field name="terminal">1</field>
-            <field name="country">6</field> 
-            <field name="city">6</field> 
+            <field name="country">104</field> 
+            <field name="city">586</field> 
             <field name="iata_code">DEL</field>
         </record>
         <record model="airport.model" id="airport_demo_data2">
             <field name="name">Singapore Changi Airport</field>
             <field name="description">skajd</field>
             <field name="terminal">2</field>
-            <field name="country">63</field> 
-            <field name="city">6</field> 
+            <field name="country">197</field> 
+            <field name="city">0</field> 
             <field name="iata_code">SIN</field>
         </record>
         <record model="airport.model" id="airport_demo_data3">
             <field name="name">Chhatrapati Shivaji International</field>
             <field name="description">abc</field>
             <field name="terminal">1</field>
-            <field name="city">6</field> 
-            <field name="country">6</field> 
+            <field name="city">597</field> 
+            <field name="country">104</field> 
             <field name="iata_code">BOM</field>
         </record>
         <record model="airport.model" id="airport_demo_data4">
             <field name="name">Abu Dhabi International</field>
             <field name="description">abc</field>
             <field name="terminal">2</field>
-            <field name="country">9</field>
-            <field name="city">6</field> 
+            <field name="country">2</field>
+            <field name="city">548</field> 
             <field name="iata_code">AUH</field> 
         </record>
         <record model="airport.model" id="airport_demo_data5">
             <field name="name">Charles de Gaulle Airport</field>
             <field name="description">abc</field>
             <field name="terminal">1</field>
-            <field name="city">6</field> 
-            <field name="country">6</field> 
+            <field name="city">0</field> 
+            <field name="country">75</field> 
             <field name="iata_code">CDG</field>
         </record>
         <record model="airport.model" id="airport_demo_data6">
             <field name="name">London Heathrow Airport</field>
             <field name="description">abc</field>
             <field name="terminal">1</field>
-            <field name="country">6</field> 
-            <field name="city">6</field> 
+            <field name="country">231</field> 
+            <field name="city">829</field> 
             <field name="iata_code">LHR</field>
         </record>
     </data>

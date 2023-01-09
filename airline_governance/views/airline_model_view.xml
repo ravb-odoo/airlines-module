@@ -29,7 +29,7 @@
             <field name="arch" type="xml">
                 <tree expand="1" string="Airline">
                     <field name="name"></field>
-                    <field name="depart_airport" />
+                    <field name="depart_airport_id" />
                     <field name="arrival_airport" />
                     <field name="depart_date_time"></field>
                     <field name="arrival_date_time"></field>
@@ -60,39 +60,38 @@
                         <group>
                             <group>
                                 <field name="type"></field>
-                            </group>
-                            <group>
-                                <field name="total_distance"></field>
-                            </group>
-                        </group>
-
-                        <group>
-                            <group>
                                 <field name="gate_no"></field>
                             </group>
                             <group>
+                                <field name="total_distance"></field>
                                 <field name="price"></field>
                             </group>
                         </group>
+
+    
 
                         <notebook>
                             <page name="Details">
                                 <group>
                                     <group>
                                         <field name="depart_date_time"></field>
+                                        <field name="depart_airport_id"></field>
                                     </group>
                                     <group>
                                         <field name="arrival_date_time"></field>
-                                    </group>
-                                </group>
-                                <group>
-                                    <group>
-                                        <field name="depart_airport"></field>
-                                    </group>
-                                    <group>
                                         <field name="arrival_airport"></field>
                                     </group>
                                 </group>
+                            </page>
+                            <page name="Passengers">
+                                <field name="passenger_ids" type="xml">
+                                    <tree>
+                                        <field name="name"></field>
+                                        <field name="airline_class" />
+                                        <field name="seat_no" />
+                                        <field name="nationality"></field>
+                                    </tree>
+                                </field>
                             </page>
                             <page name="About">
                                 <group>
@@ -123,18 +122,20 @@
                     <field name="name"></field>
                     <field name="depart_date_time"></field>
                     <field name="arrival_airport"></field>
-                    <field name="depart_airport"></field>
+                    <field name="depart_airport_id"></field>
                     <field name="arrival_date_time"></field>
                     <field name="type"></field>
-                    <separator/>
+                    <separator />
                     <filter string="Inactive" name="active" domain="[('active', '=', False)]" />
-                    <group string="Group By">                       
+                    <group string="Group By">
                         <filter string="Name" name="name" context="{'group_by':'name'}" />
-                        <filter string="Departure Airport" name="depart_airport" context="{'group_by':'depart_airport'}" />
-                        <separator/>
-                        <filter string="Arrival Airport" name="arrival_airport" context="{'group_by':'arrival_airport'}" />
+                        <filter string="Departure Airport" name="depart_airport_id"
+                            context="{'group_by':'depart_airport_id'}" />
+                        <separator />
+                        <filter string="Arrival Airport" name="arrival_airport"
+                            context="{'group_by':'arrival_airport'}" />
                         <filter string="Type" name="type" context="{'group_by':'type'}" />
-                        
+
                     </group>
                 </search>
             </field>

@@ -27,9 +27,9 @@
             <field name="name">Raj Shah</field>
             <field name="airline_class">premium_economy</field>
             <field name="seat_no">10B</field>
-            <field name="froms">London</field>
-            <field name="to">Ahmedabad</field>
-            <field name="nationality">British</field>
+            <field name="froms">Delhi</field>
+            <field name="to">Mumbai</field>
+            <field name="nationality">Indian</field>
             <!-- <field name="flight_id" ref="airline.airline_demo_data1"></field> -->
         </record>
 
@@ -59,6 +59,16 @@
             <field name="seat_no">24D</field>
             <field name="froms">Mumbai</field>
             <field name="to">Chennai</field>
+            <field name="nationality">Indian</field>
+            <!-- <field name="flight_id" ref="airline.airline_demo_data1"></field> -->
+        </record>
+
+        <record model="passenger.model" id="passenger_demo_data7">
+            <field name="name">Raj Shah</field>
+            <field name="airline_class">economy</field>
+            <field name="seat_no">20D</field>
+            <field name="froms">Delhi</field>
+            <field name="to">Mumbai</field>
             <field name="nationality">Indian</field>
             <!-- <field name="flight_id" ref="airline.airline_demo_data1"></field> -->
         </record>
