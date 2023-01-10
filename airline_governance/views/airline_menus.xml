@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <odoo>
-    <menuitem id="airline_menu_root" name="Airlines" sequence= "10" action="airline_model_action">
+    <menuitem id="airline_menu_root" name="Airlines" sequence= "10" action="airline_model_action" web_icon="airline_governance,static/description/airplane.png">
 
         <menuitem id="airline_first_level_menu" name="Passengers">
         <menuitem id="airline_model_menu_action" action="airline_passenger_model_action"/>

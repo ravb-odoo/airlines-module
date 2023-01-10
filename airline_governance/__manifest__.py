@@ -11,9 +11,9 @@
     ],
 
     'demo' : [ 
-            'data/airline_demo_data.xml',
             'data/passenger_demo_data.xml',
             'data/airport_demo_data.xml',
+            'data/airline_demo_data.xml',
     ],
     'application' : True,
     'installable': True,

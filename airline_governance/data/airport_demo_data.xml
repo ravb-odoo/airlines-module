@@ -31,7 +31,7 @@
             <field name="description">abc</field>
             <field name="terminal">2</field>
             <field name="country">2</field>
-            <field name="city">548</field> 
+            <field name="city">546</field> 
             <field name="iata_code">AUH</field> 
         </record>
         <record model="airport.model" id="airport_demo_data5">
@@ -49,6 +49,30 @@
             <field name="country">231</field> 
             <field name="city">829</field> 
             <field name="iata_code">LHR</field>
+        </record>
+        <record model="airport.model" id="airport_demo_data7">
+            <field name="name">Madras International Meenambakkam Airport</field>
+            <field name="description">abc</field>
+            <field name="terminal">2</field>
+            <field name="country">104</field> 
+            <field name="city">607</field> 
+            <field name="iata_code">MAA</field>
+        </record>
+        <record model="airport.model" id="airport_demo_data8">
+            <field name="name">Sardar Vallabhbhai Patel International Airport</field>
+            <field name="description">abc</field>
+            <field name="terminal">2</field>
+            <field name="country">104</field> 
+            <field name="city">588</field> 
+            <field name="iata_code">AMD</field>
+        </record>
+        <record model="airport.model" id="airport_demo_data9">
+            <field name="name">Dubai International Airport</field>
+            <field name="description">abc</field>
+            <field name="terminal">1</field>
+            <field name="country">2</field> 
+            <field name="city">548</field> 
+            <field name="iata_code">DXB</field>
         </record>
     </data>
 </odoo>

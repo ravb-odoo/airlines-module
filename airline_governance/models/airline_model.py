@@ -4,7 +4,7 @@ from odoo import fields, models
 class airlineModel(models.Model):
     _name = "airline.model"
     _description = "Airline Model"
-    _rec_name = 'depart_airport_id'
+    # _rec_name = 'depart_airport_id'
 
     name = fields.Char('Name', required = True)
     description = fields.Text('Description')
@@ -18,3 +18,4 @@ class airlineModel(models.Model):
     price = fields.Integer("Total Price ", required = True)
     active = fields.Boolean('Active', default = True)
     passenger_ids = fields.One2many('passenger.model', 'flight_id')
+    

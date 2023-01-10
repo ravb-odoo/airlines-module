@@ -35,7 +35,7 @@
                     <field name="arrival_date_time"></field>
                     <field name="type"></field>
                     <field name="total_distance"></field>
-                    <field name="price"></field>
+                    <field name="price" widget="monetary"></field>
                     <field name="gate_no" optional='hide'></field>
                     <field name="active" optional='hide'></field>
                 </tree>

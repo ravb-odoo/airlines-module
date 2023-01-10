@@ -11,7 +11,7 @@
             <field name="arrival_date_time">2022-03-07 12:40:00</field>
             <field name="depart_date_time">2022-03-07 11:25:00</field>
             <field name="arrival_airport">BOM </field>
-            <field name="depart_airport_id">1</field>
+            <field name="depart_airport_id">7</field>
             <field name="total_distance">576</field>
             <field name="gate_no">A2</field>
             <field name="price">3850</field>
@@ -24,7 +24,7 @@
             <field name="arrival_date_time">2021-09-03 09:05:00</field>
             <field name="depart_date_time">2021-09-03 07:00:00</field>
             <field name="arrival_airport">BOM </field>
-            <field name="depart_airport_id">2</field>
+            <field name="depart_airport_id">1</field>
             <field name="total_distance">1023</field>
             <field name="gate_no">B4</field>
             <field name="price">10123</field>
@@ -37,7 +37,7 @@
             <field name="arrival_date_time">2021-06-23 18:20:00</field>
             <field name="depart_date_time">2021-06-23 14:00:00</field>
             <field name="arrival_airport">AUH </field>
-            <field name="depart_airport_id">3</field>
+            <field name="depart_airport_id">8</field>
             <field name="total_distance">2346</field>
             <field name="gate_no">A10</field>
             <field name="price">39448</field>
@@ -47,10 +47,10 @@
             <field name="name">Etihad Airways</field>
             <field name="description">Etihad Airways is the second largest airline in the UAE headquartered in Khalifa City, Abu Dhabi. Eithad boasts in fleet size of 113 covering over 75 destinations both domestic and international. With Etihad Airways main base in Abu Dhabi International Airport, the airline has carried 14.8 million passengers in 2018.</field>
             <field name="type">international</field>
-            <field name="arrival_date_time">2021-04-25 18:20:20</field>
+            <field name="arrival_date_time">2021-04-26 18:20:20</field>
             <field name="depart_date_time">2021-04-24 21:05:30</field>
             <field name="arrival_airport">AMD </field>
-            <field name="depart_airport_id">3</field>
+            <field name="depart_airport_id">6</field>
             <field name="total_distance">9846</field>
             <field name="gate_no">C6</field>
             <field name="price">96112</field>
@@ -76,7 +76,7 @@
             <field name="arrival_date_time">2020-12-02 05:10:00</field>
             <field name="depart_date_time">2020-12-02 18:25:00</field>
             <field name="arrival_airport">SIN </field>
-            <field name="depart_airport_id">3</field>
+            <field name="depart_airport_id">7</field>
             <field name="total_distance">5760</field>
             <field name="gate_no">B5</field>
             <field name="price">27899</field>
@@ -86,10 +86,10 @@
             <field name="name">SpiceJet</field>
             <field name="description">SpiceJet is the second largest airline in India and is a low-cost carrier covering 55 destinations in India and abroad. SpiceJet's first operation in 2005 was from Delhi to Mumbai post which the airline boasts a fleet size of 96. SpiceJet has named all its aircraft with names of an Indian Spice.</field>
             <field name="type">domestic</field>
-            <field name="arrival_date_time">2020-10-07 02:50:00</field>
+            <field name="arrival_date_time">2020-10-08 02:50:00</field>
             <field name="depart_date_time">2020-10-07 19:05:00</field>
             <field name="arrival_airport">MAA </field>
-            <field name="depart_airport_id">2</field>
+            <field name="depart_airport_id">8</field>
             <field name="total_distance">776</field>
             <field name="gate_no">A9</field>
             <field name="price">43904</field>
@@ -102,7 +102,7 @@
             <field name="arrival_date_time">2020-03-07 18:10:00</field>
             <field name="depart_date_time">2020-03-07 13:25:00</field>
             <field name="arrival_airport">PAR</field>
-            <field name="depart_airport_id">1</field>
+            <field name="depart_airport_id">3</field>
             <field name="total_distance">6709</field>
             <field name="gate_no">A9</field>
             <field name="price">89956</field>
@@ -115,7 +115,7 @@
             <field name="arrival_date_time">2020-10-27 10:10:20</field>
             <field name="depart_date_time">2020-10-27 01:50:40</field>
             <field name="arrival_airport">ROM </field>
-            <field name="depart_airport_id">4</field>
+            <field name="depart_airport_id">7</field>
             <field name="total_distance">2490</field>
             <field name="gate_no">A9</field>
             <field name="price">51098</field>
@@ -130,7 +130,7 @@
             <field name="arrival_date_time">2020-08-19 16:40:00</field>
             <field name="depart_date_time">2020-08-19 12:25:00</field>
             <field name="arrival_airport">MAA </field>
-            <field name="depart_airport_id">3</field>
+            <field name="depart_airport_id">1</field>
             <field name="total_distance">876</field>
             <field name="gate_no">B8</field>
             <field name="price">7890</field>
