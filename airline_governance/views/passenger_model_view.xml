@@ -6,6 +6,7 @@
             <field name="model">passenger.model</field>
             <field name="arch" type="xml">
                 <tree expand="1" string="Passenger">
+                    <field name="sequence" widget="handle"></field>
                     <field name="name"></field>
                     <field name="airline_class" />
                     <field name="seat_no" />

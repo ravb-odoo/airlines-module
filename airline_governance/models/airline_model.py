@@ -1,5 +1,7 @@
 # -*- coding: utf-8 -*-
-from odoo import fields, models
+import datetime
+from odoo import fields, models, api
+from odoo.exceptions import UserError
 
 class airlineModel(models.Model):
     _name = "airline.model"
@@ -11,11 +13,19 @@ class airlineModel(models.Model):
     type = fields.Selection(string="Type", selection = [('domestic','Domestic'), ('international','International')])
     arrival_date_time = fields.Datetime('Arrival', required = True)
     depart_date_time = fields.Datetime('Departure', required = True)
-    arrival_airport = fields.Char('Arrival Airport', required = True)
+    arrival_airport_id = fields.Many2one('airport.model', string='Arrival Airport', required = True)
     depart_airport_id = fields.Many2one('airport.model', string= 'Departure Airport', required = True)
     total_distance = fields.Integer('Total Distance (km)' , required = True)
     gate_no = fields.Char('Gate No.', required = True)
     price = fields.Integer("Total Price ", required = True)
     active = fields.Boolean('Active', default = True)
+    state = fields.Selection(string='State', selection=[('new','New'),('upcoming','Upcoming'),('landed','Landed'),('take_off','Take Off')], default='new')
     passenger_ids = fields.One2many('passenger.model', 'flight_id')
     
+
+    @api.model
+    def create(self, vals):
+        date1 = datetime.datetime.now()
+       
+        raise UserError(date1)
+        return super().create(vals)

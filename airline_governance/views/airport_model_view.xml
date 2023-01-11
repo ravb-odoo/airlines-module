@@ -6,6 +6,7 @@
             <field name="model">airport.model</field>
             <field name="arch" type="xml">
                 <tree expand="1" string="airport">
+                    <field name="sequence" widget="handle"></field>
                     <field name="name"></field>
                     <field name="terminal" />
                     <field name="city"></field>

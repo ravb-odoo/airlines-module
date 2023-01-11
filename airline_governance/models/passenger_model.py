@@ -9,5 +9,6 @@ class passengerModel(models.Model):
     seat_no = fields.Char('Seat', required = True)
     froms = fields.Char('From', required = True)
     to = fields.Char('To', required = True)
+    sequence = fields.Integer()
     nationality = fields.Char('Nationality', required=True)
     flight_id = fields.Many2one('airline.model', string="Flight")

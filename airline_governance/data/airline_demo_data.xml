@@ -10,7 +10,7 @@
             <field name="type">domestic</field>
             <field name="arrival_date_time">2022-03-07 12:40:00</field>
             <field name="depart_date_time">2022-03-07 11:25:00</field>
-            <field name="arrival_airport">BOM </field>
+            <field name="arrival_airport_id">3</field>
             <field name="depart_airport_id">7</field>
             <field name="total_distance">576</field>
             <field name="gate_no">A2</field>
@@ -23,7 +23,7 @@
             <field name="type">domestic</field>
             <field name="arrival_date_time">2021-09-03 09:05:00</field>
             <field name="depart_date_time">2021-09-03 07:00:00</field>
-            <field name="arrival_airport">BOM </field>
+            <field name="arrival_airport_id">3 </field>
             <field name="depart_airport_id">1</field>
             <field name="total_distance">1023</field>
             <field name="gate_no">B4</field>
@@ -36,7 +36,7 @@
             <field name="type">international</field>
             <field name="arrival_date_time">2021-06-23 18:20:00</field>
             <field name="depart_date_time">2021-06-23 14:00:00</field>
-            <field name="arrival_airport">AUH </field>
+            <field name="arrival_airport_id">4</field>
             <field name="depart_airport_id">8</field>
             <field name="total_distance">2346</field>
             <field name="gate_no">A10</field>
@@ -49,7 +49,7 @@
             <field name="type">international</field>
             <field name="arrival_date_time">2021-04-26 18:20:20</field>
             <field name="depart_date_time">2021-04-24 21:05:30</field>
-            <field name="arrival_airport">AMD </field>
+            <field name="arrival_airport_id">8 </field>
             <field name="depart_airport_id">6</field>
             <field name="total_distance">9846</field>
             <field name="gate_no">C6</field>
@@ -62,7 +62,7 @@
             <field name="type">international</field>
             <field name="arrival_date_time">2021-02-19 07:50:00</field>
             <field name="depart_date_time">2021-02-18 19:15:00</field>
-            <field name="arrival_airport">AMD </field>
+            <field name="arrival_airport_id">8 </field>
             <field name="depart_airport_id">2</field>
             <field name="total_distance">5769</field>
             <field name="gate_no">A1</field>
@@ -75,7 +75,7 @@
             <field name="type">international</field>
             <field name="arrival_date_time">2020-12-02 05:10:00</field>
             <field name="depart_date_time">2020-12-02 18:25:00</field>
-            <field name="arrival_airport">SIN </field>
+            <field name="arrival_airport_id">2 </field>
             <field name="depart_airport_id">7</field>
             <field name="total_distance">5760</field>
             <field name="gate_no">B5</field>
@@ -88,7 +88,7 @@
             <field name="type">domestic</field>
             <field name="arrival_date_time">2020-10-08 02:50:00</field>
             <field name="depart_date_time">2020-10-07 19:05:00</field>
-            <field name="arrival_airport">MAA </field>
+            <field name="arrival_airport_id">7 </field>
             <field name="depart_airport_id">8</field>
             <field name="total_distance">776</field>
             <field name="gate_no">A9</field>
@@ -101,7 +101,7 @@
             <field name="type">international</field>
             <field name="arrival_date_time">2020-03-07 18:10:00</field>
             <field name="depart_date_time">2020-03-07 13:25:00</field>
-            <field name="arrival_airport">PAR</field>
+            <field name="arrival_airport_id">5</field>
             <field name="depart_airport_id">3</field>
             <field name="total_distance">6709</field>
             <field name="gate_no">A9</field>
@@ -114,9 +114,9 @@
             <field name="type">international</field>
             <field name="arrival_date_time">2020-10-27 10:10:20</field>
             <field name="depart_date_time">2020-10-27 01:50:40</field>
-            <field name="arrival_airport">ROM </field>
+            <field name="arrival_airport_id">6</field>
             <field name="depart_airport_id">7</field>
-            <field name="total_distance">2490</field>
+            <field name="total_distance">4490</field>
             <field name="gate_no">A9</field>
             <field name="price">51098</field>
         </record>
@@ -129,39 +129,37 @@
             <field name="type">domestic</field>
             <field name="arrival_date_time">2020-08-19 16:40:00</field>
             <field name="depart_date_time">2020-08-19 12:25:00</field>
-            <field name="arrival_airport">MAA </field>
+            <field name="arrival_airport_id">7</field>
             <field name="depart_airport_id">1</field>
             <field name="total_distance">876</field>
             <field name="gate_no">B8</field>
             <field name="price">7890</field>
         </record>
-        <!-- <record model="airline.model" id="airline_demo_data1">
-            <field name="name">Indigo</field>
-            <field name="description">Indigo is the largest individual Asian low-cost carrier in terms of jet fleet size and passengers. Headquartered in Gurgaon, Haryana, India the privately owned airline connects over 1000 flights daily to 66 destinations both
-                domestically and internationally and is ranked as the most punctual, on-time airline
-                in India.</field>
-            <field name="type">domestic</field>
-            <field name="arrival_date_time">2022-03-07 12:40:00</field>
-            <field name="depart_date_time">2022-03-07 11:25:00</field>
-            <field name="arrival_airport">BOM </field>
-            <field name="depart_airport_id">AMD </field>
-            <field name="total_distance">576</field>
+        <record model="airline.model" id="airline_demo_data11">
+            <field name="name">Bahrain Air</field>
+            <field name="description">Bahrain Air started operations on 1 February 2008 as a low-cost airline but changed its operating model to full service by early 2010. The airline was headed in the U.A.E by its Country Manager, Rashid Al Moosa and by its UAE-Sales and Marketing Nicky Bijlaney</field>
+            <field name="type">international</field>
+            <field name="arrival_date_time">2008-03-07 12:40:00</field>
+            <field name="depart_date_time">2008-03-07 11:25:00</field>
+            <field name="arrival_airport_id">3</field>
+            <field name="depart_airport_id">9</field>
+            <field name="total_distance">2376</field>
             <field name="gate_no">A2</field>
-            <field name="price">3850</field>
+            <field name="price">38500</field>
+            <field name="active">False</field>
         </record>
-        <record model="airline.model" id="airline_demo_data1">
-            <field name="name">Indigo</field>
-            <field name="description">Indigo is the largest individual Asian low-cost carrier in terms of jet fleet size and passengers. Headquartered in Gurgaon, Haryana, India the privately owned airline connects over 1000 flights daily to 66 destinations both
-                domestically and internationally and is ranked as the most punctual, on-time airline
-                in India.</field>
+        <record model="airline.model" id="airline_demo_data12">
+            <field name="name">Gulf Air</field>
+            <field name="description">Gulf Traveller was the all-economy full service subsidiary airline of Gulf Air. Its main base was Abu Dhabi International Airport.[1] It was briefly relocated between Bahrain and Muscat airports after Abu Dhabi pulled out of the Gulf Air consortium in 2005, and in May 2007</field>
             <field name="type">domestic</field>
-            <field name="arrival_date_time">2022-03-07 12:40:00</field>
-            <field name="depart_date_time">2022-03-07 11:25:00</field>
-            <field name="arrival_airport">BOM </field>
-            <field name="depart_airport_id">AMD </field>
-            <field name="total_distance">576</field>
+            <field name="arrival_date_time">2005-03-07 12:40:00</field>
+            <field name="depart_date_time">2005-03-07 11:25:00</field>
+            <field name="arrival_airport_id">9</field>
+            <field name="depart_airport_id">4</field>
+            <field name="total_distance">1776</field>
             <field name="gate_no">A2</field>
-            <field name="price">3850</field>
-        </record> -->
+            <field name="price">32850</field>
+            <field name="active">False</field>
+        </record>
     </data>
 </odoo>

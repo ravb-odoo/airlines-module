@@ -13,6 +13,7 @@ class airportModel(models.Model):
     city = fields.Many2one("res.country.state", string='City')
     country = fields.Many2one("res.country", string='Country', required = True)
     iata_code = fields.Char('IATA Code', required=True)
+    sequence = fields.Integer()
     
 @api.model
 def name_get(self):
