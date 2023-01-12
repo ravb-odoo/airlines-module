@@ -2,6 +2,7 @@
 {
     'name' : 'Airlines',
     'author': "Ravi Bhingradiya",
+    'depends': ['mail'],
     'data' : [
             'security/ir.model.access.csv',
             'views/airline_model_view.xml',

@@ -15,9 +15,9 @@ class airportModel(models.Model):
     iata_code = fields.Char('IATA Code', required=True)
     sequence = fields.Integer()
     
-@api.model
-def name_get(self):
-    result = []       
-    for rec in self:
-            result.append((rec.id, rec.iata_code2))       
-    return result
+
+    def name_get(self):
+        result = []       
+        for rec in self:
+                result.append((rec.id, ('%s - %s') %(rec.iata_code, rec.name)))    
+        return result
