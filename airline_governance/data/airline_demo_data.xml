@@ -10,8 +10,8 @@
             <field name="type">domestic</field>
             <field name="arrival_date_time">2023-03-07 12:40:00</field>
             <field name="depart_date_time">2023-03-07 11:25:00</field>
-            <field name="arrival_airport_id">3</field>
-            <field name="depart_airport_id">7</field>
+            <field name="arrival_airport_id" ref="airline_governance.airport_demo_data7"></field>
+            <field name="depart_airport_id" ref="airline_governance.airport_demo_data5"></field>
             <field name="total_distance">576</field>
             <field name="gate_no">A2</field>
             <field name="price">3850</field>
@@ -23,8 +23,8 @@
             <field name="type">domestic</field>
             <field name="arrival_date_time">2021-09-03 09:05:00</field>
             <field name="depart_date_time">2021-09-03 07:00:00</field>
-            <field name="arrival_airport_id">3 </field>
-            <field name="depart_airport_id">1</field>
+            <field name="arrival_airport_id" ref="airline_governance.airport_demo_data1"> </field>
+            <field name="depart_airport_id" ref="airline_governance.airport_demo_data3"></field>
             <field name="total_distance">1023</field>
             <field name="gate_no">B4</field>
             <field name="price">10123</field>
@@ -36,8 +36,8 @@
             <field name="type">international</field>
             <field name="arrival_date_time">2023-06-23 18:20:00</field>
             <field name="depart_date_time">2023-06-23 14:00:00</field>
-            <field name="arrival_airport_id">4</field>
-            <field name="depart_airport_id">8</field>
+            <field name="arrival_airport_id" ref="airline_governance.airport_demo_data8"></field>
+            <field name="depart_airport_id" ref="airline_governance.airport_demo_data4"></field>
             <field name="total_distance">2346</field>
             <field name="gate_no">A10</field>
             <field name="price">39448</field>
@@ -49,8 +49,8 @@
             <field name="type">international</field>
             <field name="arrival_date_time">2021-04-26 18:20:20</field>
             <field name="depart_date_time">2021-04-24 21:05:30</field>
-            <field name="arrival_airport_id">8 </field>
-            <field name="depart_airport_id">6</field>
+            <field name="arrival_airport_id" ref="airline_governance.airport_demo_data6"></field>
+            <field name="depart_airport_id" ref="airline_governance.airport_demo_data8"></field>
             <field name="total_distance">9846</field>
             <field name="gate_no">C6</field>
             <field name="price">96112</field>
@@ -62,8 +62,8 @@
             <field name="type">international</field>
             <field name="arrival_date_time">2021-02-19 07:50:00</field>
             <field name="depart_date_time">2021-02-18 19:15:00</field>
-            <field name="arrival_airport_id">8 </field>
-            <field name="depart_airport_id">2</field>
+            <field name="arrival_airport_id" ref="airline_governance.airport_demo_data3"></field>
+            <field name="depart_airport_id" ref="airline_governance.airport_demo_data8"></field>
             <field name="total_distance">5769</field>
             <field name="gate_no">A1</field>
             <field name="price">38500</field>
@@ -75,8 +75,8 @@
             <field name="type">international</field>
             <field name="arrival_date_time">2023-12-02 05:10:00</field>
             <field name="depart_date_time">2023-12-02 18:25:00</field>
-            <field name="arrival_airport_id">2 </field>
-            <field name="depart_airport_id">7</field>
+            <field name="arrival_airport_id" ref="airline_governance.airport_demo_data7"></field>
+            <field name="depart_airport_id" ref="airline_governance.airport_demo_data2"></field>
             <field name="total_distance">5760</field>
             <field name="gate_no">B5</field>
             <field name="price">27899</field>
@@ -88,8 +88,8 @@
             <field name="type">domestic</field>
             <field name="arrival_date_time">2020-10-08 02:50:00</field>
             <field name="depart_date_time">2020-10-07 19:05:00</field>
-            <field name="arrival_airport_id">7 </field>
-            <field name="depart_airport_id">8</field>
+            <field name="arrival_airport_id" ref="airline_governance.airport_demo_data8"></field>
+            <field name="depart_airport_id" ref="airline_governance.airport_demo_data7"></field>
             <field name="total_distance">776</field>
             <field name="gate_no">A9</field>
             <field name="price">43904</field>
@@ -101,8 +101,8 @@
             <field name="type">international</field>
             <field name="arrival_date_time">2023-03-07 18:10:00</field>
             <field name="depart_date_time">2023-03-07 13:25:00</field>
-            <field name="arrival_airport_id">5</field>
-            <field name="depart_airport_id">3</field>
+            <field name="arrival_airport_id" ref="airline_governance.airport_demo_data3"></field>
+            <field name="depart_airport_id" ref="airline_governance.airport_demo_data5"></field>
             <field name="total_distance">6709</field>
             <field name="gate_no">A9</field>
             <field name="price">89956</field>
@@ -110,12 +110,12 @@
 
         <record model="airline.model" id="airline_demo_data9">
             <field name="name">Lufthansa</field>
-            <field name="description">ILufthansa also known as Deutsche Lufthansa AG is the second largest airline in Europe and the largest German airline. Lufthansa is one of the founding members of the Star Alliance which was formed in 1997. Lufthansa boasts a fleet size of 265 covering 220 destinations domestically and internationally. Lufthansa’s primary hub is in Frankfurt Airport followed by its secondary hub Munich Airport.</field>
+            <field name="description">Lufthansa also known as Deutsche Lufthansa AG is the second largest airline in Europe and the largest German airline. Lufthansa is one of the founding members of the Star Alliance which was formed in 1997. Lufthansa boasts a fleet size of 265 covering 220 destinations domestically and internationally. Lufthansa’s primary hub is in Frankfurt Airport followed by its secondary hub Munich Airport.</field>
             <field name="type">international</field>
             <field name="arrival_date_time">2020-10-27 10:10:20</field>
             <field name="depart_date_time">2020-10-27 01:50:40</field>
-            <field name="arrival_airport_id">6</field>
-            <field name="depart_airport_id">7</field>
+            <field name="arrival_airport_id" ref="airline_governance.airport_demo_data7"></field>
+            <field name="depart_airport_id" ref="airline_governance.airport_demo_data6"></field>
             <field name="total_distance">4490</field>
             <field name="gate_no">A9</field>
             <field name="price">51098</field>
@@ -129,8 +129,8 @@
             <field name="type">domestic</field>
             <field name="arrival_date_time">2023-08-19 16:40:00</field>
             <field name="depart_date_time">2023-08-19 12:25:00</field>
-            <field name="arrival_airport_id">7</field>
-            <field name="depart_airport_id">1</field>
+            <field name="arrival_airport_id" ref="airline_governance.airport_demo_data1"></field>
+            <field name="depart_airport_id" ref="airline_governance.airport_demo_data7"></field>
             <field name="total_distance">876</field>
             <field name="gate_no">B8</field>
             <field name="price">7890</field>
@@ -141,8 +141,8 @@
             <field name="type">international</field>
             <field name="arrival_date_time">2008-03-07 12:40:00</field>
             <field name="depart_date_time">2008-03-07 11:25:00</field>
-            <field name="arrival_airport_id">3</field>
-            <field name="depart_airport_id">9</field>
+            <field name="arrival_airport_id" ref="airline_governance.airport_demo_data9"></field>
+            <field name="depart_airport_id" ref="airline_governance.airport_demo_data7"></field>
             <field name="total_distance">2376</field>
             <field name="gate_no">A2</field>
             <field name="price">38500</field>
@@ -154,8 +154,8 @@
             <field name="type">domestic</field>
             <field name="arrival_date_time">2005-03-07 12:40:00</field>
             <field name="depart_date_time">2005-03-07 11:25:00</field>
-            <field name="arrival_airport_id">9</field>
-            <field name="depart_airport_id">4</field>
+            <field name="arrival_airport_id" ref="airline_governance.airport_demo_data4"></field>
+            <field name="depart_airport_id" ref="airline_governance.airport_demo_data9"></field>
             <field name="total_distance">1776</field>
             <field name="gate_no">A2</field>
             <field name="price">32850</field>
