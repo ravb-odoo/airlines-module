@@ -5,6 +5,8 @@ class passengerModel(models.Model):
     _description = "Passenger Model"
 
     name = fields.Char('Name', required = True)
+    phone_no = fields.Integer('Phone No.', required=True)
+    email = fields.Char('Email', required=True)
     airline_class = fields.Selection(string='Airline Class', selection=[('first','First'),('business','Business'),('economy','Economy'), ('premium_economy','Premium Economy')])
     seat_no = fields.Char('Seat', required = True)
     froms = fields.Char('From', required = True)

@@ -26,6 +26,8 @@ class airlineModel(models.Model):
     passenger_ids = fields.One2many('passenger.model', 'flight_id')
     image = fields.Binary("Image", attachment=True, store=True,
                                 help="This field holds the image used for as favicon")
+
+    pilot_id = fields.Many2one('res.partner')
     
 
 
@@ -34,13 +36,14 @@ class airlineModel(models.Model):
         date1 = datetime.datetime.now()
 
         for rec in self:
-            duration =  rec.depart_date_time - relativedelta(hours= 1)
+            duration =  rec.depart_date_time - relativedelta(hours = 2)
             if date1 > rec.depart_date_time:
                 rec.state = 'take_off'
             elif date1 < duration:
                 rec.state = 'upcoming'
             elif date1 > duration and date1 < rec.depart_date_time:
                 rec.state = 'landed'
+
                 
         # raise UserError(date1)
     

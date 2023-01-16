@@ -29,18 +29,30 @@
                             <field name="name" placeholder="Name"></field>
                         </h1>
 
+                       <group>
                         <group>
-                            <group>
-                                <field name="airline_class"></field>
-                                <field name="froms"></field>
-                                <field name="nationality"></field>
-                            </group>
-                            <group>
-                                <field name="seat_no"></field>
-                                <field name="to"></field>
-                                <field name="flight_id"></field>
-                            </group>
+                            <field name="phone_no"></field>
                         </group>
+                        <group>
+                            <field name="email" widget="mail"></field>
+                        </group>
+                       </group>
+                        <notebook>
+                            <page name="Flight">
+                                <group>
+                                    <group>
+                                        <field name="airline_class"></field>
+                                        <field name="froms"></field>
+                                        <field name="nationality"></field>
+                                    </group>
+                                    <group>
+                                        <field name="seat_no"></field>
+                                        <field name="to"></field>
+                                        <field name="flight_id"></field>
+                                    </group>
+                                </group>
+                            </page>
+                        </notebook>
                     </sheet>
                 </form>
             </field>

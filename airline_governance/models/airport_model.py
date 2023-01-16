@@ -14,6 +14,9 @@ class airportModel(models.Model):
     country = fields.Many2one("res.country", string='Country', required = True)
     iata_code = fields.Char('IATA Code', required=True)
     sequence = fields.Integer()
+
+    airline_ids = fields.One2many('airline.model','depart_airport_id', string="Flights")
+    flight_count = fields.Integer("Count" , compute = "_count_flight")
     
 
     def name_get(self):
@@ -21,3 +24,7 @@ class airportModel(models.Model):
         for rec in self:
                 result.append((rec.id, ('%s - %s') %(rec.iata_code, rec.name)))    
         return result
+
+    def _count_flight(self):
+        for rec in self:
+            rec.flight_count = len(rec.airline_ids)
