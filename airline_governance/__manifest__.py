@@ -5,10 +5,10 @@
     'depends': ['mail'],
     'data' : [
             'security/ir.model.access.csv',
-            'views/airline_model_view.xml',
-            'views/airport_model_view.xml',
-            'views/passenger_model_view.xml',
             'views/airline_menus.xml',
+            'views/airport_model_view.xml',
+            'views/airline_model_view.xml',
+            'views/passenger_model_view.xml',
     ],
 
     'demo' : [ 

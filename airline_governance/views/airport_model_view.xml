@@ -55,31 +55,5 @@
             </field>
         </record>
 
-        <!-- <record id="airport_view_search" model="ir.ui.view">
-            <field name="name">airports</field>
-            <field name="model">Airport.model</field>
-            <field name="arch" type="xml">
-                <search string="airport_Model">
-                    <field name="name"></field>
-                    <field name="airline_class"></field>
-                    <field name="froms"></field>
-                    <field name="to"></field>
-                    <field name="nationality"></field>
-                    <field name="flight_id"></field>
-
-                    <group string="Group By">                       
-                        <filter string="Name" name="name" context="{'group_by':'name'}" />
-                        <filter string="Class" name="airline_class" context="{'group_by':'airline_class'}" />
-                        <separator/>
-                        <filter string="Departure" name="froms" context="{'group_by':'froms'}" />
-                        <filter name="to" string="Arrival" context="{'group_by':'to'}" />
-                        <filter string="Nationality" name="nationality" context="{'group_by':'nationality'}" />
-                        <filter string="Flights" name="flight_id" context="{'group_by':'flight_id'}" />
-                    </group>
-
-
-                </search>
-            </field>
-        </record> -->
     </data>
 </odoo>

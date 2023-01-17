@@ -5,9 +5,11 @@
         <record model="passenger.model" id="passenger_demo_data1">
             <field name="name">Harsh Mehta</field>
             <field name="airline_class">business</field>
+            <field name ="phone_no">0987654321</field>
+            <field name="email">abc@gmail.com</field>
             <field name="seat_no">12A</field>
-            <field name="froms">Mumbai</field>
-            <field name="to">Ahmedabad</field>
+            <field name="from_id">597</field>
+            <field name="to_id">588</field>
             <field name="nationality">Indian</field>
             <field name="flight_id" ref="airline_governance.airline_demo_data1"></field>
         </record>
@@ -16,9 +18,11 @@
         <record model="passenger.model" id="passenger_demo_data2">
             <field name="name">odoo</field>
             <field name="airline_class">economy</field>
+            <field name ="phone_no">1234567890</field>
+            <field name="email">efg@gmail.com</field>
             <field name="seat_no">1E</field>
-            <field name="froms">Delhi</field>
-            <field name="to">Dubai</field>
+            <field name="from_id">586</field>
+            <field name="to_id">548</field>
             <field name="nationality">Indian</field>
             <field name="flight_id" ref="airline_governance.airline_demo_data5"></field>
         </record>
@@ -26,9 +30,11 @@
         <record model="passenger.model" id="passenger_demo_data3">
             <field name="name">Raj Shah</field>
             <field name="airline_class">premium_economy</field>
+            <field name ="phone_no">9102934567</field>
+            <field name="email">xyz@gmail.com</field>
             <field name="seat_no">10B</field>
-            <field name="froms">Delhi</field>
-            <field name="to">Mumbai</field>
+            <field name="from_id">586</field>
+            <field name="to_id">597</field>
             <field name="nationality">Indian</field>
             <field name="flight_id" ref="airline_governance.airline_demo_data9"></field>
         </record>
@@ -37,8 +43,10 @@
             <field name="name">Kriti Thakkar</field>
             <field name="airline_class">first</field>
             <field name="seat_no">23C</field>
-            <field name="froms">Paris</field>
-            <field name="to">Mumbai</field>
+            <field name ="phone_no">9879112345</field>
+            <field name="email">mno@gmail.com</field>
+            <field name="from_id">607</field>
+            <field name="to_id">546</field>
             <field name="nationality">European</field>
             <field name="flight_id" ref="airline_governance.airline_demo_data7"></field>
         </record>
@@ -47,8 +55,10 @@
             <field name="name">Vivek Oberoi</field>
             <field name="airline_class">business</field>
             <field name="seat_no">1A</field>
-            <field name="froms">Chennai</field>
-            <field name="to">Delhi</field>
+            <field name ="phone_no">0987654321</field>
+            <field name="email">abc@gmail.com</field>
+            <field name="from_id">607</field>
+            <field name="to_id">586</field>
             <field name="nationality">Indian</field>
             <field name="flight_id" ref="airline_governance.airline_demo_data10"></field>
         </record>
@@ -56,9 +66,11 @@
         <record model="passenger.model" id="passenger_demo_data6">
             <field name="name">Rahul Jaisal</field>
             <field name="airline_class">economy</field>
+            <field name ="phone_no">9123454321</field>
+            <field name="email">xyz@gmail.com</field>
             <field name="seat_no">24D</field>
-            <field name="froms">Mumbai</field>
-            <field name="to">Dubai</field>
+            <field name="from_id">597</field>
+            <field name="to_id">548</field>
             <field name="nationality">Indian</field>
             <field name="flight_id" ref="airline_governance.airline_demo_data3"></field>
         </record>
@@ -66,9 +78,11 @@
         <record model="passenger.model" id="passenger_demo_data7">
             <field name="name">Raj Shah</field>
             <field name="airline_class">economy</field>
+            <field name ="phone_no">7803667234</field>
+            <field name="email">odoo@gmail.com</field>
             <field name="seat_no">20D</field>
-            <field name="froms">Delhi</field>
-            <field name="to">Mumbai</field>
+            <field name="from_id">586</field>
+            <field name="to_id">597</field>
             <field name="nationality">Indian</field>
             <field name="flight_id" ref="airline_governance.airline_demo_data2"></field>
         </record>
