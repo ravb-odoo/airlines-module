@@ -1,4 +1,4 @@
-from odoo import fields, models
+from odoo import fields, models, api
 
 class passengerModel(models.Model):
     _name = "passenger.model"
@@ -13,4 +13,5 @@ class passengerModel(models.Model):
     to_id = fields.Many2one('res.country.state', string='To', required = True)
     sequence = fields.Integer()
     nationality = fields.Char('Nationality', required=True)
-    flight_id = fields.Many2one('airline.model', string="Flight")
+    flight_id = fields.Many2one('airline.model', string="Flight", domain="[('arrival_airport_id.city','=',to_id),('depart_airport_id.city','=',from_id)]")
+
