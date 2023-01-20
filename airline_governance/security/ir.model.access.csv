@@ -2,3 +2,4 @@ id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
 airline_governance.access_airline_model,access_airline_model,airline_governance.model_airline_model,base.group_user,1,1,1,1
 airline_governance.access_passenger_model,access_passenger_model,airline_governance.model_passenger_model,base.group_user,1,1,1,1
 airline_governance.access_airport_model,access_airport_model,airline_governance.model_airport_model,base.group_user,1,1,1,1
+airline_governance.access_crew_model,access_crew_model,airline_governance.model_crew_model,base.group_user,1,1,1,1

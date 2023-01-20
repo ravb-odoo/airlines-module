@@ -13,5 +13,5 @@ class passengerModel(models.Model):
     to_id = fields.Many2one('res.country.state', string='To', required = True)
     sequence = fields.Integer()
     nationality = fields.Char('Nationality', required=True)
-    flight_id = fields.Many2one('airline.model', string="Flight", domain="[('arrival_airport_id.city','=',to_id),('depart_airport_id.city','=',from_id)]")
+    flight_id = fields.Many2one('airline.model', string="Flight", domain="[('arrival_airport_id.city_id','=',to_id),('depart_airport_id.city_id','=',from_id)]")
 

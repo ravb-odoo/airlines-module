@@ -46,6 +46,12 @@
         </field>
     </record>
 
+    <record id="airline_crew_model_action" model="ir.actions.act_window">
+        <field name="name">Crew</field>
+        <field name="res_model">crew.model</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
     <record id="airline_model_action_help" model="ir.actions.act_window">
         <field name="name">Help</field>
         <field name="res_model">airline.model</field>
@@ -55,12 +61,14 @@
     <menuitem id="airline_menu_root" name="Airlines" sequence="10" action="airline_model_action"
         web_icon="airline_governance,static/description/airplane.png">
 
-        <menuitem id="airline_first_level_menu" name="Passengers">
+        <menuitem id="airline_first_level_menu" sequence = "20"  name="Passengers">
             <menuitem id="airline_model_menu_action" action="airline_passenger_model_action" />
         </menuitem>
 
-        <menuitem id="airline_menu_child" name="Settings">
-            <menuitem id="airline_model_menu_property_type" action="airline_airport_model_action" />
+        <menuitem id="crew_model_menu_action" sequence="30" action="airline_crew_model_action" name="Crew"/>
+
+        <menuitem id="airline_menu_child" sequence="40" name="Settings">
+            <menuitem id="airline_model_menu_sub_menu" action="airline_airport_model_action" />
             <menuitem id="airline_menu_child_task" name=" Help" action="airline_model_action_help" />
         </menuitem>
 

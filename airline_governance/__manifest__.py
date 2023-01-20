@@ -9,6 +9,7 @@
             'views/airport_model_view.xml',
             'views/airline_model_view.xml',
             'views/passenger_model_view.xml',
+            'views/crew_model_view.xml',
     ],
 
     'demo' : [ 
