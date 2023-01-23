@@ -1,0 +1,805 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<odoo>
+    <data>
+        <record model="crew.model" id="crew_demo_data1">
+            <field name="name">Ophelia Jennings</field>
+            <field name="contact_no">(757) 646-1040</field>
+            <field name="email">ruf@apolut.om</field>
+            <field name="gender">female</field>
+            <field name="type">hostess</field>
+        </record>
+
+        <record model="crew.model" id="crew_demo_data2">
+            <field name="name">Carrie Norris</field>
+            <field name="contact_no">(877) 714-4078</field>
+            <field name="email">uddiv@ebiv.to</field>
+            <field name="gender">female</field>
+            <field name="type">hostess</field>
+        </record>
+
+        <record model="crew.model" id="crew_demo_data3">
+            <field name="name">Ricardo Gutierrez</field>
+            <field name="contact_no">(907) 877-7966</field>
+            <field name="email">azom@pi.ke</field>
+            <field name="gender">female</field>
+            <field name="type">hostess</field>
+        </record>
+
+        <record model="crew.model" id="crew_demo_data4">
+            <field name="name">Derrick Cox</field>
+            <field name="contact_no">(740) 779-3244</field>
+            <field name="email">jam@agtuhlib.mu</field>
+            <field name="gender">female</field>
+            <field name="type">hostess</field>
+        </record>
+
+        <record model="crew.model" id="crew_demo_data5">
+            <field name="name">Harvey Dunn</field>
+            <field name="contact_no">(544) 208-5568</field>
+            <field name="email">iwet@vehukasil.nf</field>
+            <field name="gender">male</field>
+            <field name="type">co-pilot</field>
+        </record>
+
+        <record model="crew.model" id="crew_demo_data6">
+            <field name="name">Gussie Roberts</field>
+            <field name="contact_no">(687) 912-5010</field>
+            <field name="email">gos@mak.hm</field>
+            <field name="gender">female</field>
+            <field name="type">hostess</field>
+        </record>
+
+        <record model="crew.model" id="crew_demo_data7">
+            <field name="name">Polly Griffith</field>
+            <field name="contact_no">(529) 941-4615</field>
+            <field name="email">jordiz@ibipo.al</field>
+            <field name="gender">female</field>
+            <field name="type">hostess</field>
+        </record>
+
+        <record model="crew.model" id="crew_demo_data8">
+            <field name="name">Lida Adkins</field>
+            <field name="contact_no">(827) 854-4030</field>
+            <field name="email">ugo@ginfo.pr</field>
+            <field name="gender">male</field>
+            <field name="type">pilot</field>
+        </record>
+
+        <record model="crew.model" id="crew_demo_data9">
+            <field name="name">Mittie Harrington</field>
+            <field name="contact_no">(881) 529-2087</field>
+            <field name="email">gutdebcuz@je.sm</field>
+            <field name="gender">male</field>
+            <field name="type">co-pilot</field>
+        </record>
+
+        <record model="crew.model" id="crew_demo_data10">
+            <field name="name">Willie Griffith</field>
+            <field name="contact_no">(919) 466-5082</field>
+            <field name="email">cufum@gi.org</field>
+            <field name="gender">male</field>
+            <field name="type">hostess</field>
+        </record>
+
+        <record model="crew.model" id="crew_demo_data11">
+            <field name="name">Lawrence Byrd</field>
+            <field name="contact_no">(907) 411-6361</field>
+            <field name="email">hewcuvba@din.fo</field>
+            <field name="gender">male</field>
+            <field name="type">technician</field>
+        </record>
+
+        <record model="crew.model" id="crew_demo_data12">
+            <field name="name">Lucy Schmidt</field>
+            <field name="contact_no">(531) 893-4282</field>
+            <field name="email">muowe@ledo.gov</field>
+            <field name="gender">female</field>
+            <field name="type">hostess</field>
+        </record>
+
+        <record model="crew.model" id="crew_demo_data13">
+            <field name="name">Winifred Quinn</field>
+            <field name="contact_no">(252) 662-8824</field>
+            <field name="email">giked@erezit.dk</field>
+            <field name="gender">female</field>
+            <field name="type">hostess</field>
+        </record>
+
+        <record model="crew.model" id="crew_demo_data14">
+            <field name="name">James Jordan</field>
+            <field name="contact_no">(221) 598-9374</field>
+            <field name="email">wu@wo.np</field>
+            <field name="gender">male</field>
+            <field name="type">hostess</field>
+        </record>
+
+        <record model="crew.model" id="crew_demo_data15">
+            <field name="name">Luke Oliver</field>
+            <field name="contact_no">(237) 208-2576</field>
+            <field name="email">fel@gacdeso.ss</field>
+            <field name="gender">male</field>
+            <field name="type">technician</field>
+        </record>
+
+        <record model="crew.model" id="crew_demo_data16">
+            <field name="name">David Morris</field>
+            <field name="contact_no">(715) 936-6227</field>
+            <field name="email">edfovil@tisge.si</field>
+            <field name="gender">male</field>
+            <field name="type">pilot</field>
+        </record>
+
+        <record model="crew.model" id="crew_demo_data17">
+            <field name="name">Adam Mullins</field>
+            <field name="contact_no">(874) 855-9079</field>
+            <field name="email">voagtan@ser.tr</field>
+            <field name="gender">male</field>
+            <field name="type">co-pilot</field>
+        </record>
+
+        <record model="crew.model" id="crew_demo_data18">
+            <field name="name">Lura Norman</field>
+            <field name="contact_no">(616) 534-4796</field>
+            <field name="email">pad@jiupu.zw</field>
+            <field name="gender">female</field>
+            <field name="type">co-pilot</field>
+        </record>
+
+        <record model="crew.model" id="crew_demo_data19">
+            <field name="name">Ronald Moody</field>
+            <field name="contact_no">(714) 323-5101</field>
+            <field name="email">lobpoj@gijmiz.vu</field>
+            <field name="gender">female</field>
+            <field name="type">hostess</field>
+        </record>
+
+        <record model="crew.model" id="crew_demo_data20">
+            <field name="name">Bessie Fisher</field>
+            <field name="contact_no">(730) 989-2676</field>
+            <field name="email">ruk@lu.sv</field>
+            <field name="gender">female</field>
+            <field name="type">hostess</field>
+        </record>
+
+        <record model="crew.model" id="crew_demo_data21">
+            <field name="name">Emma Spencer</field>
+            <field name="contact_no">(711) 334-9986</field>
+            <field name="email">bokokdi@na.es</field>
+            <field name="gender">female</field>
+            <field name="type">pilot</field>
+        </record>
+
+        <record model="crew.model" id="crew_demo_data22">
+            <field name="name">Mason Christensen</field>
+            <field name="contact_no">(979) 628-6959</field>
+            <field name="email">uf@awu.ai</field>
+            <field name="gender">female</field>
+            <field name="type">hostess</field>
+        </record>
+
+        <record model="crew.model" id="crew_demo_data23">
+            <field name="name">Maude Medina</field>
+            <field name="contact_no">(555) 494-8883</field>
+            <field name="email">figa@inojuwi.sr</field>
+            <field name="gender">female</field>
+            <field name="type">hostess</field>
+        </record>
+
+        <record model="crew.model" id="crew_demo_data24">
+            <field name="name">Mable Nash</field>
+            <field name="contact_no">(955) 769-6633</field>
+            <field name="email">nato@vofjofosi.gy</field>
+            <field name="gender">female</field>
+            <field name="type">pilot</field>
+        </record>
+
+        <record model="crew.model" id="crew_demo_data25">
+            <field name="name">Ruth Shaw</field>
+            <field name="contact_no">(678) 828-7069</field>
+            <field name="email">acvafza@hu.cv</field>
+            <field name="gender">male</field>
+            <field name="type">co-pilot</field>
+        </record>
+
+        <record model="crew.model" id="crew_demo_data26">
+            <field name="name">Irene Moran</field>
+            <field name="contact_no">(262) 529-6736</field>
+            <field name="email">bubi@cowtov.mo</field>
+            <field name="gender">female</field>
+            <field name="type">hostess</field>
+        </record>
+
+        <record model="crew.model" id="crew_demo_data27">
+            <field name="name">Philip Bowers</field>
+            <field name="contact_no">(457) 722-1175</field>
+            <field name="email">ceisapaw@unnoer.me</field>
+            <field name="gender">male</field>
+            <field name="type">technician</field>
+        </record>
+
+        <record model="crew.model" id="crew_demo_data28">
+            <field name="name">Mary Gray</field>
+            <field name="contact_no">(927) 355-6732</field>
+            <field name="email">ocanowas@ukaki.gy</field>
+            <field name="gender">female</field>
+            <field name="type">hostess</field>
+        </record>
+
+        <record model="crew.model" id="crew_demo_data29">
+            <field name="name">Chester Hill</field>
+            <field name="contact_no">(458) 934-3719</field>
+            <field name="email">got@codafada.bz</field>
+            <field name="gender">male</field>
+            <field name="type">co-pilot</field>
+        </record>
+
+        <record model="crew.model" id="crew_demo_data30">
+            <field name="name">Francis Massey</field>
+            <field name="contact_no">(213) 765-3366</field>
+            <field name="email">bod@olvenu.ie</field>
+            <field name="gender">female</field>
+            <field name="type">hostess</field>
+        </record>
+
+        <record model="crew.model" id="crew_demo_data31">
+            <field name="name">Maude Crawford</field>
+            <field name="contact_no">(772) 770-1316</field>
+            <field name="email">ijmihuje@osojam.bj</field>
+            <field name="gender">female</field>
+            <field name="type">co-pilot</field>
+        </record>
+
+        <record model="crew.model" id="crew_demo_data32">
+            <field name="name">Ellen Hines</field>
+            <field name="contact_no">(840) 545-5515</field>
+            <field name="email">vilvalca@vog.sh</field>
+            <field name="gender">female</field>
+            <field name="type">hostess</field>
+        </record>
+
+        <record model="crew.model" id="crew_demo_data33">
+            <field name="name">Dominic Wilkins</field>
+            <field name="contact_no">(839) 823-1376</field>
+            <field name="email">dubeweb@na.sa</field>
+            <field name="gender">female</field>
+            <field name="type">hostess</field>
+        </record>
+
+        <record model="crew.model" id="crew_demo_data34">
+            <field name="name">Richard Bates</field>
+            <field name="contact_no">(226) 801-9094</field>
+            <field name="email">daboke@ricis.aw</field>
+            <field name="gender">male</field>
+            <field name="type">hostess</field>
+        </record>
+
+        <record model="crew.model" id="crew_demo_data35">
+            <field name="name">Loretta Franklin</field>
+            <field name="contact_no">(877) 511-5632</field>
+            <field name="email">dudpez@radlochu.vu</field>
+            <field name="gender">male</field>
+            <field name="type">technician</field>
+        </record>
+
+        <record model="crew.model" id="crew_demo_data36">
+            <field name="name">Polly Tyler</field>
+            <field name="contact_no">(923) 280-2181</field>
+            <field name="email">so@nad.ch</field>
+            <field name="gender">female</field>
+            <field name="type">hostess</field>
+        </record>
+
+        <record model="crew.model" id="crew_demo_data37">
+            <field name="name">Jean Lowe</field>
+            <field name="contact_no">(420) 766-6283</field>
+            <field name="email">tula@zawmo.dk</field>
+            <field name="gender">female</field>
+            <field name="type">hostess</field>
+        </record>
+
+        <record model="crew.model" id="crew_demo_data38">
+            <field name="name">Steve Green</field>
+            <field name="contact_no">(735) 599-9739</field>
+            <field name="email">sasifu@zo.cf</field>
+            <field name="gender">female</field>
+            <field name="type">hostess</field>
+        </record>
+
+        <record model="crew.model" id="crew_demo_data39">
+            <field name="name">Sadie Simpson</field>
+            <field name="contact_no">(378) 607-3860</field>
+            <field name="email">elececpap@tezeci.gi</field>
+            <field name="gender">male</field>
+            <field name="type">technician</field>
+        </record>
+
+        <record model="crew.model" id="crew_demo_data40">
+            <field name="name">Sally Young</field>
+            <field name="contact_no">(641) 587-7161</field>
+            <field name="email">licemeira@ceja.bt</field>
+            <field name="gender">male</field>
+            <field name="type">pilot</field>
+        </record>
+
+        <record model="crew.model" id="crew_demo_data41">
+            <field name="name">Helena Bush</field>
+            <field name="contact_no">(475) 496-7253</field>
+            <field name="email">me@padfoer.cg</field>
+            <field name="gender">male</field>
+            <field name="type">co-pilot</field>
+        </record>
+
+        <record model="crew.model" id="crew_demo_data42">
+            <field name="name">Sara Joseph</field>
+            <field name="contact_no">(740) 659-2194</field>
+            <field name="email">melkuse@il.bz</field>
+            <field name="gender">male</field>
+            <field name="type">hostess</field>
+        </record>
+
+        <record model="crew.model" id="crew_demo_data43">
+            <field name="name">Ronald Freeman</field>
+            <field name="contact_no">(367) 825-4064</field>
+            <field name="email">gidfool@dovapum.gr</field>
+            <field name="gender">female</field>
+            <field name="type">hostess</field>
+        </record>
+
+        <record model="crew.model" id="crew_demo_data44">
+            <field name="name">Edward McDonald</field>
+            <field name="contact_no">(565) 783-2218</field>
+            <field name="email">ire@ga.it</field>
+            <field name="gender">male</field>
+            <field name="type">pilot</field>
+        </record>
+
+        <record model="crew.model" id="crew_demo_data45">
+            <field name="name">Noah Alvarado</field>
+            <field name="contact_no">(236) 228-3158</field>
+            <field name="email">emtap@zosepli.sr</field>
+            <field name="gender">female</field>
+            <field name="type">hostess</field>
+        </record>
+
+        <record model="crew.model" id="crew_demo_data46">
+            <field name="name">Augusta Hill</field>
+            <field name="contact_no">(230) 695-9555</field>
+            <field name="email">zepib@wodowpaw.sg</field>
+            <field name="gender">female</field>
+            <field name="type">hostess</field>
+        </record>
+
+        <record model="crew.model" id="crew_demo_data47">
+            <field name="name">Minnie Reid</field>
+            <field name="contact_no">(584) 521-4731</field>
+            <field name="email">teobu@cetajefik.gn</field>
+            <field name="gender">male</field>
+            <field name="type">technician</field>
+        </record>
+
+        <record model="crew.model" id="crew_demo_data48">
+            <field name="name">Paul Joseph</field>
+            <field name="contact_no">(412) 715-1005</field>
+            <field name="email">tohob@te.lu</field>
+            <field name="gender">male</field>
+            <field name="type">pilot</field>
+        </record>
+
+        <record model="crew.model" id="crew_demo_data49">
+            <field name="name">Billy Hudson</field>
+            <field name="contact_no">(962) 765-1350</field>
+            <field name="email">oma@ko.vi</field>
+            <field name="gender">male</field>
+            <field name="type">co-pilot</field>
+        </record>
+
+        <record model="crew.model" id="crew_demo_data50">
+            <field name="name">Julia Cohen</field>
+            <field name="contact_no">(967) 985-1358</field>
+            <field name="email">cumtup@juzhiwti.lb</field>
+            <field name="gender">male</field>
+            <field name="type">hostess</field>
+        </record>
+
+        <record model="crew.model" id="crew_demo_data51">
+            <field name="name">Phoebe Wolfe</field>
+            <field name="contact_no">(703) 688-7049</field>
+            <field name="email">wam@bim.cv</field>
+            <field name="gender">female</field>
+            <field name="type">hostess</field>
+        </record>
+
+        <record model="crew.model" id="crew_demo_data52">
+            <field name="name">Andrew Johnson</field>
+            <field name="contact_no">(315) 295-9936</field>
+            <field name="email">wibweko@ed.dm</field>
+            <field name="gender">female</field>
+            <field name="type">hostess</field>
+        </record>
+
+        <record model="crew.model" id="crew_demo_data53">
+            <field name="name">Cody Padilla</field>
+            <field name="contact_no">(828) 395-2555</field>
+            <field name="email">it@sonpori.sr</field>
+            <field name="gender">male</field>
+            <field name="type">co-pilot</field>
+        </record>
+
+        <record model="crew.model" id="crew_demo_data54">
+            <field name="name">Lola Ball</field>
+            <field name="contact_no">(217) 566-9129</field>
+            <field name="email">kolov@erili.as</field>
+            <field name="gender">male</field>
+            <field name="type">hostess</field>
+        </record>
+
+        <record model="crew.model" id="crew_demo_data55">
+            <field name="name">Augusta Boone</field>
+            <field name="contact_no">(347) 550-5556</field>
+            <field name="email">ulweca@jep.io</field>
+            <field name="gender">female</field>
+            <field name="type">hostess</field>
+        </record>
+
+        <record model="crew.model" id="crew_demo_data56">
+            <field name="name">Fannie Caldwell</field>
+            <field name="contact_no">(579) 579-6716</field>
+            <field name="email">wuhnod@jir.li</field>
+            <field name="gender">female</field>
+            <field name="type">pilot</field>
+        </record>
+
+        <record model="crew.model" id="crew_demo_data57">
+            <field name="name">Etta Hanson</field>
+            <field name="contact_no">(484) 602-2445</field>
+            <field name="email">neruv@pezlov.za</field>
+            <field name="gender">male</field>
+            <field name="type">co-pilot</field>
+        </record>
+
+        <record model="crew.model" id="crew_demo_data58">
+            <field name="name">Shawn Huff</field>
+            <field name="contact_no">(304) 922-4763</field>
+            <field name="email">kut@zokwodil.lr</field>
+            <field name="gender">female</field>
+            <field name="type">hostess</field>
+        </record>
+
+        <record model="crew.model" id="crew_demo_data59">
+            <field name="name">Ricardo Peters</field>
+            <field name="contact_no">(245) 209-9007</field>
+            <field name="email">jusuniza@uwjuv.nr</field>
+            <field name="gender">male</field>
+            <field name="type">technician</field>
+        </record>
+
+        <record model="crew.model" id="crew_demo_data60">
+            <field name="name">Olive Gray</field>
+            <field name="contact_no">(234) 621-5365</field>
+            <field name="email">kanone@cem.tm</field>
+            <field name="gender">female</field>
+            <field name="type">hostess</field>
+        </record>
+
+        <record model="crew.model" id="crew_demo_data61">
+            <field name="name">Caleb Schmidt</field>
+            <field name="contact_no">(855) 711-3747</field>
+            <field name="email">obulu@himcef.vg</field>
+            <field name="gender">male</field>
+            <field name="type">co-pilot</field>
+        </record>
+
+        <record model="crew.model" id="crew_demo_data62">
+            <field name="name">Clifford Guerrero</field>
+            <field name="contact_no">(383) 999-8817</field>
+            <field name="email">epbe@ge.sr</field>
+            <field name="gender">male</field>
+            <field name="type">hostess</field>
+        </record>
+
+        <record model="crew.model" id="crew_demo_data63">
+            <field name="name">Janie Thornton</field>
+            <field name="contact_no">(900) 374-7969</field>
+            <field name="email">uljikfe@fuvuz.ma</field>
+            <field name="gender">female</field>
+            <field name="type">hostess</field>
+        </record>
+
+        <record model="crew.model" id="crew_demo_data64">
+            <field name="name">Gerald Sanders</field>
+            <field name="contact_no">(360) 250-9583</field>
+            <field name="email">nenah@powre.sr</field>
+            <field name="gender">female</field>
+            <field name="type">hostess</field>
+        </record>
+
+        <record model="crew.model" id="crew_demo_data65">
+            <field name="name">Minerva Luna</field>
+            <field name="contact_no">(643) 653-1560</field>
+            <field name="email">vifin@mo.ac</field>
+            <field name="gender">female</field>
+            <field name="type">technician</field>
+        </record>
+
+        <record model="crew.model" id="crew_demo_data66">
+            <field name="name">Stanley Gregory</field>
+            <field name="contact_no">(240) 703-7193</field>
+            <field name="email">otal@cila.sg</field>
+            <field name="gender">male</field>
+            <field name="type">hostess</field>
+        </record>
+
+        <record model="crew.model" id="crew_demo_data67">
+            <field name="name">Augusta Kelley</field>
+            <field name="contact_no">(763) 649-6826</field>
+            <field name="email">nup@cod.ls</field>
+            <field name="gender">male</field>
+            <field name="type">technician</field>
+        </record>
+
+        <record model="crew.model" id="crew_demo_data68">
+            <field name="name">Nettie Cannon</field>
+            <field name="contact_no">(531) 658-8115</field>
+            <field name="email">cu@noelo.gr</field>
+            <field name="gender">female</field>
+            <field name="type">hostess</field>
+        </record>
+
+        <record model="crew.model" id="crew_demo_data69">
+            <field name="name">Luella Hicks</field>
+            <field name="contact_no">(918) 434-6672</field>
+            <field name="email">fobanjif@kujli.vg</field>
+            <field name="gender">male</field>
+            <field name="type">co-pilot</field>
+        </record>
+
+        <record model="crew.model" id="crew_demo_data70">
+            <field name="name">Christine Ingram</field>
+            <field name="contact_no">(341) 319-3229</field>
+            <field name="email">boag@wuha.gp</field>
+            <field name="gender">male</field>
+            <field name="type">hostess</field>
+        </record>
+
+        <record model="crew.model" id="crew_demo_data71">
+            <field name="name">Henrietta Austin</field>
+            <field name="contact_no">(836) 886-5573</field>
+            <field name="email">dunkege@bohugrar.si</field>
+            <field name="gender">male</field>
+            <field name="type">technician</field>
+        </record>
+
+        <record model="crew.model" id="crew_demo_data72">
+            <field name="name">Rose Adkins</field>
+            <field name="contact_no">(863) 503-6760</field>
+            <field name="email">diwzej@neza.ir</field>
+            <field name="gender">female</field>
+            <field name="type">pilot</field>
+        </record>
+
+        <record model="crew.model" id="crew_demo_data73">
+            <field name="name">Susan Jenkins</field>
+            <field name="contact_no">(719) 965-7044</field>
+            <field name="email">kekezak@birdujasi.mw</field>
+            <field name="gender">female</field>
+            <field name="type">hostess</field>
+        </record>
+
+        <record model="crew.model" id="crew_demo_data74">
+            <field name="name">Lottie Lowe</field>
+            <field name="contact_no">(439) 719-6508</field>
+            <field name="email">izeopehid@ciso.sz</field>
+            <field name="gender">male</field>
+            <field name="type">hostess</field>
+        </record>
+
+        <record model="crew.model" id="crew_demo_data75">
+            <field name="name">Bryan Sherman</field>
+            <field name="contact_no">(433) 949-5077</field>
+            <field name="email">caro@cabe.ac</field>
+            <field name="gender">female</field>
+            <field name="type">pilot</field>
+        </record>
+
+        <record model="crew.model" id="crew_demo_data76">
+            <field name="name">Ophelia Garrett</field>
+            <field name="contact_no">(343) 568-9547</field>
+            <field name="email">mikwassab@ma.io</field>
+            <field name="gender">male</field>
+            <field name="type">pilot</field>
+        </record>
+
+        <record model="crew.model" id="crew_demo_data77">
+            <field name="name">Andre Matthews</field>
+            <field name="contact_no">(738) 959-6067</field>
+            <field name="email">habime@gegirolu.kn</field>
+            <field name="gender">male</field>
+            <field name="type">co-pilot</field>
+        </record>
+
+        <record model="crew.model" id="crew_demo_data78">
+            <field name="name">Martha Nash</field>
+            <field name="contact_no">(314) 968-7453</field>
+            <field name="email">sogron@jib.su</field>
+            <field name="gender">female</field>
+            <field name="type">hostess</field>
+        </record>
+
+        <record model="crew.model" id="crew_demo_data79">
+            <field name="name">Jason Arnold</field>
+            <field name="contact_no">(566) 566-2178</field>
+            <field name="email">et@poksavfob.ky</field>
+            <field name="gender">male</field>
+            <field name="type">technician</field>
+        </record>
+
+        <record model="crew.model" id="crew_demo_data80">
+            <field name="name">Marguerite Yates</field>
+            <field name="contact_no">(758) 641-8412</field>
+            <field name="email">kokdufe@pup.no</field>
+            <field name="gender">female</field>
+            <field name="type">hostess</field>
+        </record>
+
+        <record model="crew.model" id="crew_demo_data81">
+            <field name="name">Matilda Dunn</field>
+            <field name="contact_no">(423) 219-4292</field>
+            <field name="email">vaeki@laje.bn</field>
+            <field name="gender">female</field>
+            <field name="type">hostess</field>
+        </record>
+
+        <record model="crew.model" id="crew_demo_data82">
+            <field name="name">Jean Martinez</field>
+            <field name="contact_no">(644) 977-2988</field>
+            <field name="email">naulpu@tosevpu.org</field>
+            <field name="gender">male</field>
+            <field name="type">hostess</field>
+        </record>
+
+        <record model="crew.model" id="crew_demo_data83">
+            <field name="name">Allen Pierce</field>
+            <field name="contact_no">(326) 619-1047</field>
+            <field name="email">pok@ige.tj</field>
+            <field name="gender">female</field>
+            <field name="type">hostess</field>
+        </record>
+
+        <record model="crew.model" id="crew_demo_data84">
+            <field name="name">Ida Pearson</field>
+            <field name="contact_no">(647) 241-4016</field>
+            <field name="email">weni@vi.nf</field>
+            <field name="gender">male</field>
+            <field name="type">pilot</field>
+        </record>
+
+        <record model="crew.model" id="crew_demo_data85">
+            <field name="name">Clyde Medina</field>
+            <field name="contact_no">(675) 424-1907</field>
+            <field name="email">kawtavik@nonab.tv</field>
+            <field name="gender">male</field>
+            <field name="type">co-pilot</field>
+        </record>
+
+        <record model="crew.model" id="crew_demo_data86">
+            <field name="name">Rena Bowen</field>
+            <field name="contact_no">(264) 945-8987</field>
+            <field name="email">pa@ej.sv</field>
+            <field name="gender">female</field>
+            <field name="type">co-pilot</field>
+        </record>
+
+        <record model="crew.model" id="crew_demo_data87">
+            <field name="name">Louise Brady</field>
+            <field name="contact_no">(716) 784-1098</field>
+            <field name="email">ra@getig.bn</field>
+            <field name="gender">male</field>
+            <field name="type">technician</field>
+        </record>
+
+        <record model="crew.model" id="crew_demo_data88">
+            <field name="name">Mattie Riley</field>
+            <field name="contact_no">(534) 979-5283</field>
+            <field name="email">vizu@wufu.mo</field>
+            <field name="gender">female</field>
+            <field name="type">hostess</field>
+        </record>
+
+        <record model="crew.model" id="crew_demo_data89">
+            <field name="name">Donald Watts</field>
+            <field name="contact_no">(409) 961-6120</field>
+            <field name="email">laf@ic.ng</field>
+            <field name="gender">male</field>
+            <field name="type">co-pilot</field>
+        </record>
+
+        <record model="crew.model" id="crew_demo_data90">
+            <field name="name">Harvey Gonzales</field>
+            <field name="contact_no">(735) 770-6318</field>
+            <field name="email">hotbeba@tufwu.vc</field>
+            <field name="gender">female</field>
+            <field name="type">hostess</field>
+        </record>
+
+        <record model="crew.model" id="crew_demo_data91">
+            <field name="name">Isabella Willis</field>
+            <field name="contact_no">(638) 747-5712</field>
+            <field name="email">le@bub.gov</field>
+            <field name="gender">male</field>
+            <field name="type">technician</field>
+        </record>
+
+        <record model="crew.model" id="crew_demo_data92">
+            <field name="name">Lydia Hansen</field>
+            <field name="contact_no">(905) 463-1055</field>
+            <field name="email">faena@wok.er</field>
+            <field name="gender">male</field>
+            <field name="type">pilot</field>
+        </record>
+
+        <record model="crew.model" id="crew_demo_data93">
+            <field name="name">Patrick Farmer</field>
+            <field name="contact_no">(337) 395-9591</field>
+            <field name="email">morca@civefi.wf</field>
+            <field name="gender">male</field>
+            <field name="type">co-pilot</field>
+        </record>
+
+        <record model="crew.model" id="crew_demo_data94">
+            <field name="name">Lillie Johnston</field>
+            <field name="contact_no">(711) 619-2405</field>
+            <field name="email">emo@pecwurul.lt</field>
+            <field name="gender">male</field>
+            <field name="type">hostess</field>
+        </record>
+
+        <record model="crew.model" id="crew_demo_data95">
+            <field name="name">Danny Hill</field>
+            <field name="contact_no">(325) 448-6182</field>
+            <field name="email">bommuv@janlicu.so</field>
+            <field name="gender">female</field>
+            <field name="type">hostess</field>
+        </record>
+
+        <record model="crew.model" id="crew_demo_data96">
+            <field name="name">Darrell Washington</field>
+            <field name="contact_no">(628) 643-7337</field>
+            <field name="email">zoh@ci.it</field>
+            <field name="gender">female</field>
+            <field name="type">hostess</field>
+        </record>
+
+        <record model="crew.model" id="crew_demo_data97">
+            <field name="name">Polly Norman</field>
+            <field name="contact_no">(771) 392-4152</field>
+            <field name="email">pumu@vin.si</field>
+            <field name="gender">female</field>
+            <field name="type">hostess</field>
+        </record>
+
+        <record model="crew.model" id="crew_demo_data98">
+            <field name="name">Franklin Rodriguez</field>
+            <field name="contact_no">(317) 703-1923</field>
+            <field name="email">asu@wonoraf.bf</field>
+            <field name="gender">male</field>
+            <field name="type">hostess</field>
+        </record>
+
+        <record model="crew.model" id="crew_demo_data99">
+            <field name="name">Walter Duncan</field>
+            <field name="contact_no">(457) 416-1688</field>
+            <field name="email">iwedaole@icjilog.mm</field>
+            <field name="gender">male</field>
+            <field name="type">technician</field>
+        </record>
+
+        <record model="crew.model" id="crew_demo_data100">
+            <field name="name">Mattie Rogers</field>
+            <field name="contact_no">(741) 740-1513</field>
+            <field name="email">cofdor@kuhvikcan.us</field>
+            <field name="gender">female</field>
+            <field name="type">hostess</field>
+        </record>
+    </data>
+</odoo>

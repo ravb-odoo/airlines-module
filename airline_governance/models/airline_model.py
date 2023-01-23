@@ -27,8 +27,10 @@ class airlineModel(models.Model):
     image = fields.Binary("Image", attachment=True, store=True,
                                 help="This field holds the image used for as favicon")
 
-    pilot_id = fields.Many2one('res.partner')
-    
+    pilot_id = fields.Many2one('crew.model', string= "Pilot" , domain="[('type', '=', 'pilot')]")
+    co_pilot_id = fields.Many2one('crew.model', string= "Co-Pilot", domain="[('type', '=', 'co-pilot')]")
+    hostess_id = fields.Many2many('crew.model', 'airline_hostess_rel', 'airline_id','hostess_id', string= "Hostess", domain="[('type', '=', 'hostess')]")
+    technician_ids = fields.Many2many('crew.model', 'airline_technician_rel', 'airline_id', 'technician_id', String="Technician", domain="[('type', '=', 'technician')]")
 
 
     @api.constrains('depart_date_time')

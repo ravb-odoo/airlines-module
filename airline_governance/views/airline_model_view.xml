@@ -47,7 +47,6 @@
                             <group>
                                 <field name="type"></field>
                                 <field name="gate_no"></field>
-                                <field name="pilot_id"></field>
                             </group>
                             <group>
                                 <field name="total_distance"></field>
@@ -64,6 +63,18 @@
                                     <group>
                                         <field name="arrival_date_time"></field>
                                         <field name="arrival_airport_id"></field>
+                                    </group>
+                                </group>
+                            </page>
+                            <page name="Crew">
+                                <group>
+                                    <group>
+                                        <field name="pilot_id"></field>
+                                        <field name="co_pilot_id"></field>
+                                    </group>
+                                    <group>
+                                        <field name="hostess_id" widget="many2many_tags" options="{'color_field': 'color'}"></field>
+                                        <field name="technician_ids" widget="many2many_tags" options="{'color_field': 'color'}"></field>
                                     </group>
                                 </group>
                             </page>
