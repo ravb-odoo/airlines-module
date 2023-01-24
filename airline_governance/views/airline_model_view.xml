@@ -6,8 +6,8 @@
             <field name="name">Airlines</field>
             <field name="model">airline.model</field>
             <field name="arch" type="xml">
-                <tree expand="1" string="Airline" decoration-warning="state == 'landed'"
-                    decoration-info="state == 'upcoming'" decoration-success="state== 'take_off'"
+                <tree expand="1" string="Airline" decoration-success="state == 'landed'"
+                    decoration-info="state == 'upcoming'" decoration-muted="state== 'take_off'" decoration-warning="state == 'maintenance'"
                     decoration-danger="active == False">
                     <field name="name"></field>
                     <field name="depart_airport_id" />
@@ -30,7 +30,8 @@
             <field name="arch" type="xml">
                 <form string="Airline">
                     <header>
-                        <field name="state" widget="statusbar"></field>
+                        <field name="state" widget="statusbar" options = '{"clickable":1}'></field>
+                        <button name="action_maintenance" type="object" string="Maintenance" attrs="{'invisible': [('state', 'not in', 'landed')]}"/>
                     </header>
                     <sheet>
                         <widget name="web_ribbon" title="Take Off" bg_color="bg-success"
@@ -126,7 +127,7 @@
                     <separator />
                     <filter string="Inactive" name="active" domain="[('active', '=', False)]" />
                     <filter string="Upcoming" name="upcoming"
-                        domain="[('state', 'in',('upcoming', 'landed'))]" />
+                        domain="[('state', 'in',('upcoming', 'landed','maintenance'))]" />
                     <group string="Group By">
                         <filter string="Name" name="name" context="{'group_by':'name'}" />
                         <filter string="Departure Airport" name="depart_airport_id"

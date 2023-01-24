@@ -22,7 +22,7 @@ class airlineModel(models.Model):
     gate_no = fields.Char('Gate No.', required = True)
     price = fields.Integer("Total Price ", required = True)
     active = fields.Boolean('Active', default = True)
-    state = fields.Selection(string='State', selection=[('new','New'),('upcoming','Upcoming'),('landed','Landed'),('take_off','Take Off')], default='new', tracking=True)
+    state = fields.Selection(string='State', selection=[('new','New'),('upcoming','Upcoming'),('landed','Landed'),('maintenance','Maintenance'),('take_off','Take Off')], default='new', tracking=True)
     passenger_ids = fields.One2many('passenger.model', 'flight_id')
     image = fields.Binary("Image", attachment=True, store=True,
                                 help="This field holds the image used for as favicon")
@@ -30,7 +30,7 @@ class airlineModel(models.Model):
     pilot_id = fields.Many2one('crew.model', string= "Pilot" , domain="[('type', '=', 'pilot')]")
     co_pilot_id = fields.Many2one('crew.model', string= "Co-Pilot", domain="[('type', '=', 'co-pilot')]")
     hostess_id = fields.Many2many('crew.model', 'airline_hostess_rel', 'airline_id','hostess_id', string= "Hostess", domain="[('type', '=', 'hostess')]")
-    technician_ids = fields.Many2many('crew.model', 'airline_technician_rel', 'airline_id', 'technician_id', String="Technician", domain="[('type', '=', 'technician')]")
+    technician_ids = fields.Many2many('crew.model', 'airline_technician_rel', 'airline_id', 'technician_id', string="Technician", domain="[('type', '=', 'technician')]")
 
 
     @api.constrains('depart_date_time')
@@ -46,6 +46,20 @@ class airlineModel(models.Model):
             elif date1 > duration and date1 < rec.depart_date_time:
                 rec.state = 'landed'
 
-                
-        # raise UserError(date1)
+        
+    
+    def action_maintenance(self):
+        for rec in self:
+            rec.state = 'maintenance'
+
+    
+    @api.ondelete(at_uninstall=False)
+    def _check_state(self):
+        for asset in self:
+            if asset.state not in ['new', 'take_off']:
+                raise UserError(
+                    f'You cannot delete a {asset.state} flight.',
+                )
+
+
     
