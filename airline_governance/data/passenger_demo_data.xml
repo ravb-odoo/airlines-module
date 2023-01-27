@@ -2,7 +2,7 @@
 
 <odoo>
     <data>
-        <record model="passenger.model" id="passenger_demo_data1">
+        <record model="airline.passenger" id="passenger_demo_data1">
             <field name="name">Harsh Mehta</field>
             <field name="airline_class">business</field>
             <field name ="phone_no">0987654321</field>
@@ -15,7 +15,7 @@
         </record>
 
 
-        <record model="passenger.model" id="passenger_demo_data2">
+        <record model="airline.passenger" id="passenger_demo_data2">
             <field name="name">odoo</field>
             <field name="airline_class">economy</field>
             <field name ="phone_no">1234567890</field>
@@ -27,7 +27,7 @@
             <field name="flight_id" ref="airline_governance.airline_demo_data5"></field>
         </record>
 
-        <record model="passenger.model" id="passenger_demo_data3">
+        <record model="airline.passenger" id="passenger_demo_data3">
             <field name="name">Raj Shah</field>
             <field name="airline_class">premium_economy</field>
             <field name ="phone_no">9102934567</field>
@@ -39,7 +39,7 @@
             <field name="flight_id" ref="airline_governance.airline_demo_data9"></field>
         </record>
 
-        <record model="passenger.model" id="passenger_demo_data4">
+        <record model="airline.passenger" id="passenger_demo_data4">
             <field name="name">Kriti Thakkar</field>
             <field name="airline_class">first</field>
             <field name="seat_no">23C</field>
@@ -51,7 +51,7 @@
             <field name="flight_id" ref="airline_governance.airline_demo_data7"></field>
         </record>
 
-        <record model="passenger.model" id="passenger_demo_data5">
+        <record model="airline.passenger" id="passenger_demo_data5">
             <field name="name">Vivek Oberoi</field>
             <field name="airline_class">business</field>
             <field name="seat_no">1A</field>
@@ -63,7 +63,7 @@
             <field name="flight_id" ref="airline_governance.airline_demo_data10"></field>
         </record>
 
-        <record model="passenger.model" id="passenger_demo_data6">
+        <record model="airline.passenger" id="passenger_demo_data6">
             <field name="name">Rahul Jaisal</field>
             <field name="airline_class">economy</field>
             <field name ="phone_no">9123454321</field>
@@ -75,7 +75,7 @@
             <field name="flight_id" ref="airline_governance.airline_demo_data3"></field>
         </record>
 
-        <record model="passenger.model" id="passenger_demo_data7">
+        <record model="airline.passenger" id="passenger_demo_data7">
             <field name="name">Raj Shah</field>
             <field name="airline_class">economy</field>
             <field name ="phone_no">7803667234</field>

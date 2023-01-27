@@ -2,7 +2,7 @@
 
 <odoo>
     <data>
-        <record model="airport.model" id="airport_demo_data1">
+        <record model="airline.airport" id="airport_demo_data1">
             <field name="name"> Indira Gandhi International Airport</field>
             <field name="description">abc</field>
             <field name="terminal">1</field>
@@ -10,7 +10,7 @@
             <field name="city_id">586</field> 
             <field name="iata_code">DEL</field>
         </record>
-        <record model="airport.model" id="airport_demo_data2">
+        <record model="airline.airport" id="airport_demo_data2">
             <field name="name">Singapore Changi Airport</field>
             <field name="description">skajd</field>
             <field name="terminal">2</field>
@@ -18,7 +18,7 @@
             <field name="city_id">0</field> 
             <field name="iata_code">SIN</field>
         </record>
-        <record model="airport.model" id="airport_demo_data3">
+        <record model="airline.airport" id="airport_demo_data3">
             <field name="name">Chhatrapati Shivaji International</field>
             <field name="description">abc</field>
             <field name="terminal">1</field>
@@ -26,7 +26,7 @@
             <field name="country_id">104</field> 
             <field name="iata_code">BOM</field>
         </record>
-        <record model="airport.model" id="airport_demo_data4">
+        <record model="airline.airport" id="airport_demo_data4">
             <field name="name">Abu Dhabi International</field>
             <field name="description">abc</field>
             <field name="terminal">2</field>
@@ -34,7 +34,7 @@
             <field name="city_id">546</field> 
             <field name="iata_code">AUH</field> 
         </record>
-        <record model="airport.model" id="airport_demo_data5">
+        <record model="airline.airport" id="airport_demo_data5">
             <field name="name">Charles de Gaulle Airport</field>
             <field name="description">abc</field>
             <field name="terminal">1</field>
@@ -42,7 +42,7 @@
             <field name="country_id">75</field> 
             <field name="iata_code">CDG</field>
         </record>
-        <record model="airport.model" id="airport_demo_data6">
+        <record model="airline.airport" id="airport_demo_data6">
             <field name="name">London Heathrow Airport</field>
             <field name="description">abc</field>
             <field name="terminal">1</field>
@@ -50,7 +50,7 @@
             <field name="city_id">829</field> 
             <field name="iata_code">LHR</field>
         </record>
-        <record model="airport.model" id="airport_demo_data7">
+        <record model="airline.airport" id="airport_demo_data7">
             <field name="name">Madras International Meenambakkam Airport</field>
             <field name="description">abc</field>
             <field name="terminal">2</field>
@@ -58,7 +58,7 @@
             <field name="city_id">607</field> 
             <field name="iata_code">MAA</field>
         </record>
-        <record model="airport.model" id="airport_demo_data8">
+        <record model="airline.airport" id="airport_demo_data8">
             <field name="name">Sardar Vallabhbhai Patel International Airport</field>
             <field name="description">abc</field>
             <field name="terminal">2</field>
@@ -66,7 +66,7 @@
             <field name="city_id">588</field> 
             <field name="iata_code">AMD</field>
         </record>
-        <record model="airport.model" id="airport_demo_data9">
+        <record model="airline.airport" id="airport_demo_data9">
             <field name="name">Dubai International Airport</field>
             <field name="description">abc</field>
             <field name="terminal">1</field>

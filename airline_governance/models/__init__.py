@@ -1,3 +1,3 @@
 # -*- coding: utf-8 -*-
 
-from . import airline_model,passenger_model, airport_model, crew_model
+from . import airline,airline_airport,airline_crew,airline_passenger

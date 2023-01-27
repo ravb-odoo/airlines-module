@@ -3,7 +3,7 @@
 
     <record id="airline_model_action" model="ir.actions.act_window">
         <field name="name">Airlines</field>
-        <field name="res_model">airline.model</field>
+        <field name="res_model">airline.airline</field>
         <field name="view_mode">list,form</field>
         <field name="context">{'search_default_upcoming' : 1}</field>
         <field name="help" type="html">
@@ -14,7 +14,7 @@
     </record>
     <record id="airline_passenger_model_action" model="ir.actions.act_window">
         <field name="name">Passengers</field>
-        <field name="res_model">passenger.model</field>
+        <field name="res_model">airline.passenger</field>
         <field name="view_mode">list,form</field>
         <field name="help" type="html">
             <p class="o_view_nocontent_smiling_face">
@@ -24,7 +24,7 @@
     </record>
     <record id="airline_airport_model_action" model="ir.actions.act_window">
         <field name="name">Airports</field>
-        <field name="res_model">airport.model</field>
+        <field name="res_model">airline.airport</field>
         <field name="view_mode">list,form</field>
         <field name="help" type="html">
             <p class="o_view_nocontent_smiling_face">
@@ -36,7 +36,7 @@
 
     <record id="airline_model_active_id_action" model="ir.actions.act_window">
         <field name="name">Airlines</field>
-        <field name="res_model">airline.model</field>
+        <field name="res_model">airline.airline</field>
         <field name="view_mode">list,form</field>
         <field name="domain">[('depart_airport_id','=', active_id)]</field>
         <field name="help" type="html">
@@ -48,13 +48,13 @@
 
     <record id="airline_crew_model_action" model="ir.actions.act_window">
         <field name="name">Crew</field>
-        <field name="res_model">crew.model</field>
+        <field name="res_model">airline.crew</field>
         <field name="view_mode">list,form</field>
     </record>
 
     <record id="airline_model_action_help" model="ir.actions.act_window">
         <field name="name">Help</field>
-        <field name="res_model">airline.model</field>
+        <field name="res_model">airline.airline</field>
         <field name="view_mode">list,form</field>
     </record>
     

@@ -1,7 +1,7 @@
 from odoo import fields, models, api
 
-class crewModel(models.Model):
-    _name = "crew.model"
+class airlineCrew(models.Model):
+    _name = "airline.crew"
     _description = "Crew Model"
 
     name = fields.Char('Name', required = True)

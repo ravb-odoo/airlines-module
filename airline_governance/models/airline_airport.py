@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 from odoo import fields, models,api
 
-class airportModel(models.Model):
-    _name = "airport.model"
+class airlineAirport(models.Model):
+    _name = "airline.airport"
     _description = "Airport Model"
     _rec_name = "iata_code"
     _rec_names_search = ['iata_code', 'name',]
@@ -15,7 +15,7 @@ class airportModel(models.Model):
     iata_code = fields.Char('IATA Code', required=True)
     sequence = fields.Integer()
 
-    airline_ids = fields.One2many('airline.model','depart_airport_id', string="Flights")
+    airline_ids = fields.One2many('airline.airline','depart_airport_id', string="Flights")
     flight_count = fields.Integer("Count" , compute = "_count_flight")
     
 

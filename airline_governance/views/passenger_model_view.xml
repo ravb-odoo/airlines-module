@@ -3,7 +3,7 @@
     <data>
         <record id="passenger_view_tree" model="ir.ui.view">
             <field name="name">Passengers</field>
-            <field name="model">passenger.model</field>
+            <field name="model">airline.passenger</field>
             <field name="arch" type="xml">
                 <tree expand="1" string="Passenger">
                     <field name="sequence" widget="handle"></field>
@@ -20,7 +20,7 @@
 
         <record id="passenger_view_form" model="ir.ui.view">
             <field name="name">Passenger</field>
-            <field name="model">passenger.model</field>
+            <field name="model">airline.passenger</field>
             <field name="arch" type="xml">
                 <form string="Passengers">
                     <sheet>
@@ -60,7 +60,7 @@
 
         <record id="passenger_view_search" model="ir.ui.view">
             <field name="name">Passengers</field>
-            <field name="model">passenger.model</field>
+            <field name="model">airline.passenger</field>
             <field name="arch" type="xml">
                 <search string="Passenger_Model">
                     <field name="name"></field>

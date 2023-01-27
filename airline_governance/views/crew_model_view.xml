@@ -3,7 +3,7 @@
     <data>
         <record id="crew_view_tree" model="ir.ui.view">
             <field name="name">Crew</field>
-            <field name="model">crew.model</field>
+            <field name="model">airline.crew</field>
             <field name="arch" type="xml">
                 <tree expand="1" string="crew">
                     <field name="sequence" widget="handle"></field>
@@ -18,7 +18,7 @@
 
         <record id="crew_view_form" model="ir.ui.view">
             <field name="name">crew.view.form</field>
-            <field name="model">crew.model</field>
+            <field name="model">airline.crew</field>
             <field name="arch" type="xml">
                 <form string="crew">
                     <sheet>

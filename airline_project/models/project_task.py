@@ -31,20 +31,18 @@ class projectTask(models.Model):
             self.stage_id_change()
         if 'kanban_state' in vals:
             self.env['project.task'].search([('id', '=', self.id)]).kanban_state_change()
+        stage_id = self._get_default_stage_id()
+        # if vals['kanban_state'] == 'done':
+        #     print("hel",self.id)
         return res
 
-        return res
     
     def stage_id_change(self):
         stage_id = self._get_default_stage_id()
         print(stage_id)
         pass
 
-    @api.model
-    def kanban_state_change(self):
-        print('ready')
-        pass
-
     def kanban_state_change(self):
         # your code here
+        print("sd",self.id)
         pass

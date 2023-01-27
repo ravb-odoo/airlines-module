@@ -4,8 +4,8 @@ from odoo import api, fields, models, Command, _
 from dateutil.relativedelta import relativedelta
 
 
-class airlineModel(models.Model):
-    _inherit = "airline.model"
+class airlineAirline(models.Model):
+    _inherit = "airline.airline"
     _description = "Inherit Airline Model"
 
     def action_maintenance(self):

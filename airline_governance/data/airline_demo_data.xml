@@ -2,7 +2,7 @@
 
 <odoo>
     <data>
-        <record model="airline.model" id="airline_demo_data1">
+        <record model="airline.airline" id="airline_demo_data1">
             <field name="name">Indigo</field>
             <field name="description">Indigo is the largest individual Asian low-cost carrier in
                 terms of jet fleet size and passengers. Headquartered in Gurgaon, Haryana, India the
@@ -20,7 +20,7 @@
             <field name="image" type="base64" file="airline_governance/static/src/img/indigo.png" />
         </record>
 
-        <record model="airline.model" id="airline_demo_data2">
+        <record model="airline.airline" id="airline_demo_data2">
             <field name="name">Air India</field>
             <field name="description">Air India is the third largest carrier in India which is a
                 preferred airline for both domestic and international destinations. Domestically,
@@ -39,7 +39,7 @@
 
         </record>
 
-        <record model="airline.model" id="airline_demo_data3">
+        <record model="airline.airline" id="airline_demo_data3">
             <field name="name">Etihad Airways</field>
             <field name="description">Etihad Airways is the second largest airline in the UAE
                 headquartered in Khalifa City, Abu Dhabi. Eithad boasts in fleet size of 113
@@ -57,7 +57,7 @@
             <field name="image" type="base64" file="airline_governance/static/src/img/Etihad.png" />
         </record>
 
-        <record model="airline.model" id="airline_demo_data4">
+        <record model="airline.airline" id="airline_demo_data4">
             <field name="name">Etihad Airways</field>
             <field name="description">Etihad Airways is the second largest airline in the UAE
                 headquartered in Khalifa City, Abu Dhabi. Eithad boasts in fleet size of 113
@@ -75,7 +75,7 @@
             <field name="image" type="base64" file="airline_governance/static/src/img/Etihad.png" />
         </record>
 
-        <record model="airline.model" id="airline_demo_data5">
+        <record model="airline.airline" id="airline_demo_data5">
             <field name="name">Vistara</field>
             <field name="description">Vistara is an Indian airline operated by the TATA SIA Airline
                 limited, which is a joint venture of Tata Sons and Singapore Airline which was
@@ -93,7 +93,7 @@
             <field name="image" type="base64" file="airline_governance/static/src/img/vistara.jpeg" />
         </record>
 
-        <record model="airline.model" id="airline_demo_data6">
+        <record model="airline.airline" id="airline_demo_data6">
             <field name="name">Qatar Airways</field>
             <field name="description">Qatar Airways is the national airline of the State of Qatar
                 and one of the aviation industry’s biggest airline carriers. Qatar Airways currently
@@ -111,7 +111,7 @@
             <field name="image" type="base64" file="airline_governance/static/src/img/qatar.png" />
         </record>
 
-        <record model="airline.model" id="airline_demo_data7">
+        <record model="airline.airline" id="airline_demo_data7">
             <field name="name">SpiceJet</field>
             <field name="description">SpiceJet is the second largest airline in India and is a
                 low-cost carrier covering 55 destinations in India and abroad. SpiceJet's first
@@ -128,7 +128,7 @@
             <field name="image" type="base64" file="airline_governance/static/src/img/spicejet.png" />
         </record>
 
-        <record model="airline.model" id="airline_demo_data8">
+        <record model="airline.airline" id="airline_demo_data8">
             <field name="name">Oman Air</field>
             <field name="description">Oman Air is one of the most prominent national carriers which
                 has spread its coverage in cities such as London, Milan, Dubai and New Delhi. Since
@@ -145,7 +145,7 @@
             <field name="image" type="base64" file="airline_governance/static/src/img/oman.png" />
         </record>
 
-        <record model="airline.model" id="airline_demo_data9">
+        <record model="airline.airline" id="airline_demo_data9">
             <field name="name">Lufthansa</field>
             <field name="description">Lufthansa also known as Deutsche Lufthansa AG is the second
                 largest airline in Europe and the largest German airline. Lufthansa is one of the
@@ -164,7 +164,7 @@
             <field name="image" type="base64" file="airline_governance/static/src/img/Lufthansa.jpg" />
         </record>
 
-        <record model="airline.model" id="airline_demo_data10">
+        <record model="airline.airline" id="airline_demo_data10">
             <field name="name">Indigo</field>
             <field name="description">Indigo is the largest individual Asian low-cost carrier in
                 terms of jet fleet size and passengers. Headquartered in Gurgaon, Haryana, India the
@@ -183,7 +183,7 @@
             <field name="image" type="base64" file="airline_governance/static/src/img/indigo.png" />
         </record>
 
-        <record model="airline.model" id="airline_demo_data11">
+        <record model="airline.airline" id="airline_demo_data11">
             <field name="name">Bahrain Air</field>
             <field name="description">Bahrain Air started operations on 1 February 2008 as a
                 low-cost airline but changed its operating model to full service by early 2010. The
@@ -201,7 +201,7 @@
             <field name="image" type="base64" file="airline_governance/static/src/img/bahrain.png" />
         </record>
 
-        <record model="airline.model" id="airline_demo_data12">
+        <record model="airline.airline" id="airline_demo_data12">
             <field name="name">Gulf Air</field>
             <field name="description">Gulf Traveller was the all-economy full service subsidiary
                 airline of Gulf Air. Its main base was Abu Dhabi International Airport.[1] It was

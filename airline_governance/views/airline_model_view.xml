@@ -4,7 +4,7 @@
 
         <record id="airline_view_tree" model="ir.ui.view">
             <field name="name">Airlines</field>
-            <field name="model">airline.model</field>
+            <field name="model">airline.airline</field>
             <field name="arch" type="xml">
                 <tree expand="1" string="Airline" decoration-success="state == 'landed'"
                     decoration-info="state == 'upcoming'" decoration-muted="state== 'take_off'" decoration-warning="state == 'maintenance'"
@@ -26,7 +26,7 @@
 
         <record id="airline_view_form" model="ir.ui.view">
             <field name="name">Airlines</field>
-            <field name="model">airline.model</field>
+            <field name="model">airline.airline</field>
             <field name="arch" type="xml">
                 <form string="Airline">
                     <header>
@@ -115,7 +115,7 @@
 
         <record id="airline_view_search" model="ir.ui.view">
             <field name="name">Airlines</field>
-            <field name="model">airline.model</field>
+            <field name="model">airline.airline</field>
             <field name="arch" type="xml">
                 <search string="Airline_Model">
                     <field name="name"></field>
