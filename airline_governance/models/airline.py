@@ -20,9 +20,9 @@ class airlineAirline(models.Model):
     depart_airport_id = fields.Many2one('airline.airport', string= 'Departure Airport', required = True)
     total_distance = fields.Integer('Total Distance (km)' , required = True)
     gate_no = fields.Char('Gate No.', required = True)
-    price = fields.Integer("Total Price ", required = True)
+    price = fields.Integer("Total Price (₹)", required = True)
     active = fields.Boolean('Active', default = True)
-    state = fields.Selection(string='State', selection=[('new','New'),('upcoming','Upcoming'),('landed','Landed'),('maintenance','Maintenance'),('take_off','Take Off')], default='new', tracking=True)
+    state = fields.Selection(string='State', selection=[('new','New'),('upcoming','Upcoming'),('landed','Landed'),('maintenance','Maintenance'),('ready','Ready'),('take_off','Take Off')], default='new', tracking=True)
     passenger_ids = fields.One2many('airline.passenger', 'flight_id')
     image = fields.Binary("Image", attachment=True, store=True,
                                 help="This field holds the image used for as favicon")

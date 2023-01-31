@@ -11,16 +11,16 @@ class airlineAirline(models.Model):
     def action_maintenance(self):
 
         if not self.env['project.project'].search([('name', '=', 'Airlines')]).id:
-            fold = [False, False, True]
-            sequences = [1, 2, 3]
-            name = ['New','In Progress','Done']
-            stage_1, stage_2, stage_3, = self.env['project.task.type'].create([{
+            fold = [False, False, True, True]
+            sequences = [1, 2, 3, 4]
+            name = ['New','In Progress','Done', 'Blocked']
+            stage_1, stage_2, stage_3, stage_4 = self.env['project.task.type'].create([{
                 'name': name[i],
                 'fold': fold[i],
                 'sequence': sequences[i],
             } for i in range(len(fold))])
             
-            stages = stage_1 + stage_2 + stage_3
+            stages = stage_1 + stage_2 + stage_3 + stage_4
             self.env['project.project'].create({
                 'name': 'Airlines',
                 'description': 'Maintenance of airlines',
@@ -33,16 +33,10 @@ class airlineAirline(models.Model):
                 'project_id': self.env['project.project'].search([('name', '=', 'Airlines')]).id,
                 'milestone_id': 1,
                 'planned_date_begin': datetime.today(),
-                'planned_date_end': datetime.today() + relativedelta(hours=1)
+                'planned_date_end': datetime.today() + relativedelta(hours=1),
+                'airline_id': rec.id,
             })
 
-        task = self.env['project.task'].browse(task_1).id
-        print(task)
-        print(task.stage_id)
-
-
-        print(self.env['project.task']._get_default_stage_id())
-        # print(self.env['project.task']._read_group_personal_stage_type_ids(stage_1,0,0))
 
 
         return super().action_maintenance()

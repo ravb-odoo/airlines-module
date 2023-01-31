@@ -6,8 +6,9 @@
             <field name="name">Airlines</field>
             <field name="model">airline.airline</field>
             <field name="arch" type="xml">
-                <tree expand="1" string="Airline" decoration-success="state == 'landed'"
-                    decoration-info="state == 'upcoming'" decoration-muted="state== 'take_off'" decoration-warning="state == 'maintenance'"
+                <tree expand="1" string="Airline" decoration-success="state in ['landed','ready']"
+                    decoration-info="state == 'upcoming'" decoration-muted="state== 'take_off'"
+                    decoration-warning="state == 'maintenance'"
                     decoration-danger="active == False">
                     <field name="name"></field>
                     <field name="depart_airport_id" />
@@ -24,21 +25,94 @@
             </field>
         </record>
 
+        <record id="airline_kanban_view" model="ir.ui.view">
+            <field name="name">Airlines.karban</field>
+            <field name="model">airline.airline</field>
+            <field name="arch" type="xml">
+                <kanban class="o_kanban_mobile" default_group_by="state" records_draggable='False'>
+                    <field name="state" />
+                    <templates>
+                        <t t-name="kanban-box">
+                            <div class="oe_kanban_global_click">
+                                <div class="row">
+                                    <div class="col-3 align-self-center p2">
+                                        <div class="row mb5">
+                                            <div class="col-10 o_account_asset_kanban_title">
+                                                <field name="image" widget='image' class="oe_avatar"
+                                                    style="width : 74px" nolabel="1"
+                                                    options='{"preview_image": "image"}' />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-9">
+                                        <div class="row text-center">
+                                            <strong>
+                                                <h4>
+                                                    <span>
+                                                        <field name="name" />
+                                                    </span>
+                                                </h4>
+                                            </strong>
+                                        </div>
+                                        <div class="row"
+                                            t-if="record.state.raw_value == 'landed' or record.state.raw_value == 'take_off'">
+                                            <div class="col-4">
+                                                Depart:
+                                            </div>
+                                            <div class="col">
+                                                <field name="depart_date_time" />
+                                            </div>
+                                        </div>
+                                        <div class="row" t-if="record.state.raw_value == 'upcoming'">
+                                            <div class="col-4">
+                                                Arrival:
+                                            </div>
+                                            <div class="col">
+                                                <field name="arrival_date_time" />
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-4">
+                                                Type:
+                                            </div>
+                                            <div class="col">
+                                                <field name="type" />
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-4">
+                                                Pilot:
+                                            </div>
+                                            <div class="col">
+                                                <field name="pilot_id" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </t>
+                    </templates>
+                </kanban>
+            </field>
+        </record>
+
         <record id="airline_view_form" model="ir.ui.view">
             <field name="name">Airlines</field>
             <field name="model">airline.airline</field>
             <field name="arch" type="xml">
                 <form string="Airline">
                     <header>
-                        <field name="state" widget="statusbar" options = '{"clickable":1}'></field>
-                        <button name="action_maintenance" type="object" string="Maintenance" attrs="{'invisible': [('state', 'not in', 'landed')]}"/>
+                        <field name="state" widget="statusbar" options='{"clickable":1}'></field>
+                        <button name="action_maintenance" type="object" string="Maintenance"
+                            attrs="{'invisible': [('state', 'not in', 'landed')]}" />
                     </header>
                     <sheet>
                         <widget name="web_ribbon" title="Take Off" bg_color="bg-success"
                             attrs="{'invisible': [('state', 'not in', ('take_off'))]}" />
                         <widget name="web_ribbon" title="Inactive" bg_color="bg-danger"
                             attrs="{'invisible': [('active', '==', True)]}" />
-                        <field name="image" widget='image' class="oe_avatar bg-black" nolabel="1" options='{"preview_image": "image"}'/>
+                        <field name="image" widget='image' class="oe_avatar bg-black" nolabel="1"
+                            options='{"preview_image": "image"}' />
                         <label for="name" string="Name" />
                         <h1>
                             <field name="name" placeholder="Name"></field>
@@ -74,8 +148,10 @@
                                         <field name="co_pilot_id"></field>
                                     </group>
                                     <group>
-                                        <field name="hostess_id" widget="many2many_tags" options="{'color_field': 'color'}"></field>
-                                        <field name="technician_ids" widget="many2many_tags" options="{'color_field': 'color'}"></field>
+                                        <field name="hostess_id" widget="many2many_tags"
+                                            options="{'color_field': 'color'}"></field>
+                                        <field name="technician_ids" widget="many2many_tags"
+                                            options="{'color_field': 'color'}"></field>
                                     </group>
                                 </group>
                             </page>
@@ -112,6 +188,31 @@
             </field>
         </record>
 
+        <record id="airline_graph_view" model="ir.ui.view">
+            <field name="name">airline.graph</field>
+            <field name="model">airline.airline</field>
+            <field name="arch" type="xml">
+                <graph string="Airline graph">
+                    <field name="name" type="row"></field>
+                    <field name="arrival_date_time" interval="month" string="Arrival"></field>
+                    <field name="type" string="Type"></field>
+                </graph>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="airline_pivot_view">
+            <field name="name">airline.pivot</field>
+            <field name="model">airline.airline</field>
+            <field name="arch" type="xml">
+                <pivot string="Airlines" sample="1">
+                    <field name="name" type="row"/>
+                    <field name="arrival_date_time" string="Arrival" type="col"/>
+                    <field name="depart_date_time" string="Depart"/>
+                    <field name="type" string="Type"/>
+                    <field name="total_distance" type="measure"/>
+                </pivot>
+            </field>
+        </record>
 
         <record id="airline_view_search" model="ir.ui.view">
             <field name="name">Airlines</field>
@@ -127,7 +228,7 @@
                     <separator />
                     <filter string="Inactive" name="active" domain="[('active', '=', False)]" />
                     <filter string="Upcoming" name="upcoming"
-                        domain="[('state', 'in',('upcoming', 'landed','maintenance'))]" />
+                        domain="[('state', 'in',('upcoming', 'landed','maintenance','ready'))]" />
                     <group string="Group By">
                         <filter string="Name" name="name" context="{'group_by':'name'}" />
                         <filter string="Departure Airport" name="depart_airport_id"
