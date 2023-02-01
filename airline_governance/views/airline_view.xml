@@ -214,6 +214,22 @@
             </field>
         </record>
 
+        <record id="airline_map_view" model="ir.ui.view">
+            <field name="name">airline.view.map</field>
+            <field name="model">airline.airline</field>
+            <field name="priority">12</field>
+            <field name="arch" type="xml">
+                <map res_partner="depart_airport_id" default_order="depart_date_time" routing="1">
+                    <field name="name" string="Airline"/>
+                    <field name="arrival_airport_id" string="Arrival"/>
+                    <field name="arrival_date_time" string="Time"/>
+                    <!-- <field name="milestone_id" string="Milestone"/>
+                    <field name="user_names" string="Assignees"/>
+                    <field name="planned_date_begin" string="Date"/> -->
+                </map>
+            </field>
+        </record>
+
         <record id="airline_view_search" model="ir.ui.view">
             <field name="name">Airlines</field>
             <field name="model">airline.airline</field>

@@ -36,5 +36,18 @@ class projectTask(models.Model):
             if vals['stage_id'] == self._get_default_stage_id('Done'):
                 res = self.env['airline.airline'].browse(self.airline_id)
                 res.state = 'ready'
+                self.message_post(body="Your text")
+                self.create_notification()
+                
         return res
 
+    @api.model
+    def create_notification(self):
+        # get the recipient
+        user = self.env.user
+        print(user)
+        # create the message
+        message = "This is a notification message"
+        # post the message as a notification
+        self.message_post(body=message, partner_ids=[user.id])
+        return True
